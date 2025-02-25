@@ -1,12 +1,13 @@
 using Microsoft.AspNetCore.Mvc;
 using firstProject.Models;
+using firstProject.Interfaces;
 
 namespace firstProject.Services;
 
-public static class ShoesService
+public class ShoesServiceConst:IShoesService
 {
-    private static List<Shoes> list;
-    static ShoesService()
+    private List<Shoes> list;
+    public ShoesServiceConst()
     {
         list = new List<Shoes>
         {
@@ -16,18 +17,18 @@ public static class ShoesService
         };
     }
 
-    public static List<Shoes> Get()
+    public List<Shoes> Get()
     {
         return list;
     }
 
-    public static Shoes Get(int code)
+    public Shoes Get(int code)
     {
         var shoes = list.FirstOrDefault(s => s.Code == code);
         return shoes;
     }
 
-    public static int Insert(Shoes newShoes)
+    public int Insert(Shoes newShoes)
     {
         if (newShoes == null)
             return -1;
@@ -40,7 +41,7 @@ public static class ShoesService
     }
 
 
-    public static bool Update(int Code, Shoes newShoes)
+    public bool Update(int Code, Shoes newShoes)
     {
         if (newShoes == null || newShoes.Code != Code)
         {
@@ -57,7 +58,7 @@ public static class ShoesService
         return true;
     }
 
-    public static bool Delete(int Code)
+    public bool Delete(int Code)
     {
         var shoes = list.FirstOrDefault(s=>s.Code==Code);
         if (shoes == null)
@@ -67,5 +68,13 @@ public static class ShoesService
         list.RemoveAt(index);
 
         return true;
+    }
+}
+
+public static class ShoeUtilities
+{
+    public static void AddShoeConst(this IServiceCollection services)
+    {
+        services.AddSingleton<IShoesService,ShoesServiceConst>();
     }
 }

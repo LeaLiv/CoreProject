@@ -1,6 +1,7 @@
 using Microsoft.AspNetCore.Mvc;
 using firstProject.Models;
-using firstProject.Services;
+using firstProject.Interfaces;
+
 namespace firstProject.Controllers;
 
 [ApiController]
@@ -8,17 +9,24 @@ namespace firstProject.Controllers;
 public class ShoesController : ControllerBase
 {
 
+    private IShoesService shoesService;
+
+    public ShoesController(IShoesService shoesService)
+    {
+        this.shoesService=shoesService;
+    }
+
     [HttpGet]
     public ActionResult<IEnumerable<Shoes>> Get()
     {
-        return ShoesService.Get();
+        return shoesService.Get();
     }
 
 
     [HttpGet("{code}")]
     public ActionResult<Shoes> Get(int code)
     {
-        var shoes = ShoesService.Get(code);
+        var shoes = shoesService.Get(code);
         if (shoes == null)
             return NotFound();
         return shoes;
@@ -27,7 +35,7 @@ public class ShoesController : ControllerBase
     [HttpPost]
     public ActionResult Post(Shoes newShoes)
     {
-        var newCode = ShoesService.Insert(newShoes);
+        var newCode = shoesService.Insert(newShoes);
         if (newCode == -1)
         {
             return BadRequest();
@@ -39,7 +47,7 @@ public class ShoesController : ControllerBase
     [HttpPut("{code}")]
     public ActionResult Put(int code, Shoes newShoes)
     {
-        if (ShoesService.Update(code, newShoes))
+        if (shoesService.Update(code, newShoes))
         {
             return NoContent();
         }
@@ -49,7 +57,7 @@ public class ShoesController : ControllerBase
     [HttpDelete("{code}")]
     public ActionResult Delete(int code)
     {
-        if (ShoesService.Delete(code))
+        if (shoesService.Delete(code))
         {
             return Ok();
         }
