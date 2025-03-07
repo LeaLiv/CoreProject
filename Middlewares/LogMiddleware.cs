@@ -21,7 +21,7 @@ public class LogMiddleware
     }
 }
 
-public static class LogMiddlewareExtantion
+public static partial class MiddlewareExtantion
 {
     public static void UseLog(this IApplicationBuilder a)
     {
