@@ -1,3 +1,4 @@
+using CoreProject.Middlewares;
 using firstProject.Services;
 var builder = WebApplication.CreateBuilder(args);
 
@@ -13,6 +14,7 @@ builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 var app = builder.Build();
 
+app.UseLog();
 // Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())
 {
