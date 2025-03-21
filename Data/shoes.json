@@ -1,4 +1,1 @@
-[{ "Code":1, "Size":38 ,"Company":"Nike"  ,"Color":"black" },
-{ "Code":2, "Size":35 ,"Company":"Adidas","Color":"pink" },
-{ "Code":3, "Size":45 ,"Company":"Nike" ,"Color":"Grey" }
-]
+[{"Code":1,"Size":38,"Company":"Nike","Color":"black"},{"Code":2,"Size":35,"Company":"Adidas","Color":"pink"},{"Code":3,"Size":45,"Company":"Nike","Color":"Grey"},{"Code":5,"Size":18,"Company":"bim","Color":"#7f2929"},{"Code":6,"Size":19,"Company":"bim","Color":"#6a2525"},{"Code":7,"Size":19,"Company":"adidas","Color":"#ddd727"},{"Code":8,"Size":36,"Company":"nike","Color":"#2c91c3"}]

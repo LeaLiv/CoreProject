@@ -4,15 +4,15 @@
 <head>
     <meta charset="UTF-8">
     <title>Shoes CRUD</title>
-    <link rel="stylesheet" href="css/site.css" />
+    <link rel="stylesheet" href="./css/site.css" />
 </head>
 
 <body>
     <h1>Shoes CRUD</h1>
     <h3>Add</h3>
     <form action="javascript:void(0);" method="POST" onsubmit="addItem()">
-        <input type="text" id="add-code" placeholder="New Shoes Code">
-        <input type="number" id="add-Size" placeholder="New Shoes Size"  min="18" max="50">
+        <!-- <input type="text" id="add-code" placeholder="New Shoes Code"> -->
+        <input type="number" id="add-size" placeholder="New Shoes Size"  min="18" max="50">
         <input type="text" id="add-company" placeholder="New Shoes Company">
         <input type="color" id="add-color" placeholder="New Shoes Color">
         <input type="submit" value="Add">
@@ -43,7 +43,7 @@
         <tbody id="shoeses"></tbody>
     </table>
 
-    <script src="js/site.js" asp-append-version="true"></script>
+    <script src="./js/site.js" asp-append-version="true"></script>
     <script type="text/javascript">
         getItems();
     </script>

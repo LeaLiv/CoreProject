@@ -1,17 +1,23 @@
 using CoreProject.Middlewares;
+using firstProject.Interfaces;
 using firstProject.Services;
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 
-builder.Services.AddControllers();
+builder.Services.AddControllers().AddJsonOptions(options=>{
+    options.JsonSerializerOptions.Encoder = System.Text.Encodings.Web.JavaScriptEncoder.UnsafeRelaxedJsonEscaping;
+});
 builder.Services.AddShoeConst();
 // Learn more about configuring OpenAPI at https://aka.ms/aspnet/openapi
 // builder.Services.AddOpenApi();
 
 
 builder.Services.AddEndpointsApiExplorer();
-builder.Services.AddSwaggerGen();
+builder.Services.AddSwaggerGen(//c=>{
+    //c.SwaggerDoc("v1", new() { Title = "firstProject", Version = "v1" });}
+);
+// builder.Services.AddSingleton<IShoesService,ShoesServiceConst>();
 var app = builder.Build();
 
 
@@ -24,19 +30,16 @@ if (app.Environment.IsDevelopment())
     app.UseSwaggerUI();
 }
 //------------------------------------------
-<<<<<<< HEAD
 app.UseMailMiddleware();
 app.UseLogMiddleware();
 
 app.UseMyErrorMiddleware();
 //-----------------------------------------
+
+app.UseDefaultFiles();
+
+app.UseStaticFiles();
 app.UseHttpsRedirection();
-=======
-app.UseLog();
-app.UseMyErrorMiddleware();
-//-----------------------------------------
-// app.UseHttpsRedirection();
->>>>>>> 515a47d327f137c660618b20ea7b9844c1f8ff19
 
 app.UseAuthorization();
 
