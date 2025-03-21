@@ -24,12 +24,19 @@ if (app.Environment.IsDevelopment())
     app.UseSwaggerUI();
 }
 //------------------------------------------
+<<<<<<< HEAD
 app.UseMailMiddleware();
 app.UseLogMiddleware();
 
 app.UseMyErrorMiddleware();
 //-----------------------------------------
 app.UseHttpsRedirection();
+=======
+app.UseLog();
+app.UseMyErrorMiddleware();
+//-----------------------------------------
+// app.UseHttpsRedirection();
+>>>>>>> 515a47d327f137c660618b20ea7b9844c1f8ff19
 
 app.UseAuthorization();
 
