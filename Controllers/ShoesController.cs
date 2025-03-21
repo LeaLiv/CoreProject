@@ -9,58 +9,63 @@ namespace firstProject.Controllers;
 public class ShoesController : ControllerBase
 {
 
-    private IShoesService shoesService;
+    private IShoesService ShoesService;
 
     public ShoesController(IShoesService shoesService)
     {
-        this.shoesService=shoesService;
+        this.ShoesService = shoesService;
     }
 
     [HttpGet]
-    public ActionResult<IEnumerable<Shoes>> Get()
-    {
-        return shoesService.Get();
-    }
+    public ActionResult<IEnumerable<Shoes>> GetAll() => ShoesService.GetAll();
+
 
 
     [HttpGet("{code}")]
     public ActionResult<Shoes> Get(int code)
     {
-        var shoes = shoesService.Get(code);
+        var shoes = ShoesService.Get(code);
         if (shoes == null)
             return NotFound();
         return shoes;
     }
 
     [HttpPost]
-    public ActionResult Post(Shoes newShoes)
+    public IActionResult Post(Shoes newShoes)
     {
-        var newCode = shoesService.Insert(newShoes);
-        if (newCode == -1)
-        {
-            return BadRequest();
-        }
-        return CreatedAtAction(nameof(Post), new { Code = newCode });
+        // var newCode = ShoesService.Insert(newShoes);
+        // if (newCode == -1)
+        // {
+        //     return BadRequest();
+        // }
+        ShoesService.Insert(newShoes);
+        return CreatedAtAction(nameof(Post), new { Code = newShoes.Code }, newShoes);
     }
 
 
     [HttpPut("{code}")]
-    public ActionResult Put(int code, Shoes newShoes)
+    public IActionResult Put(int code, Shoes newShoes)
     {
-        if (shoesService.Update(code, newShoes))
+        if (code == newShoes.Code)
+            return BadRequest();
+        var existingShoe=ShoesService.Get(code);
+        if (existingShoe is null)
         {
-            return NoContent();
+            return NotFound();
         }
-        return BadRequest();
+        ShoesService.Update(newShoes);
+        return NoContent();
     }
 
     [HttpDelete("{code}")]
-    public ActionResult Delete(int code)
+    public IActionResult Delete(int code)
     {
-        if (shoesService.Delete(code))
+        var shoe=ShoesService.Get(code);
+        if (shoe is null)
         {
-            return Ok();
+            return NotFound();
         }
-        return NotFound();
+        ShoesService.Delete(code);
+        return Content(ShoesService.Count.ToString());
     }
 }

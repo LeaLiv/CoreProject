@@ -5,13 +5,14 @@ namespace firstProject.Interfaces;
 
 public interface IShoesService
 {
-    List<Shoes> Get();
+    List<Shoes> GetAll();
 
     Shoes Get(int code);
 
-    int Insert(Shoes newShoes);
+    void Insert(Shoes newShoes);
 
-    bool Update(int Code, Shoes newShoes);
+    void Update(Shoes newShoes);
 
-    bool Delete(int Code);
+    void Delete(int Code);
+    int Count { get; }
 }

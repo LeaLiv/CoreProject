@@ -21,7 +21,8 @@ public class MyErrorMiddleware
         }
         catch (ApplicationException ex)
         {
-            c.Response.StatusCode = 400;
+           
+            //  c.Response.StatusCode = 400;
             await c.Response.WriteAsync(ex.Message);
             //---------------------------------------------------------------------
             // SmtpClient smtpClient = new SmtpClient("mail.MyWebsiteDomainName.com", 25);
@@ -44,17 +45,17 @@ public class MyErrorMiddleware
         }
         catch (Exception e)
         {
-            c.Response.StatusCode = 500;
-            await c.Response.WriteAsync("פנה לתמיכה הטכנית");
+            // c.Response.StatusCode = 500;
+            await c.Response.WriteAsync("go to technical support");
         }
     }
 }
 
 public static partial class MiddlewareExtantion
 {
-    public static WebApplication UseMyErrorMiddleware(this WebApplication app)
+    public static IApplicationBuilder UseMyErrorMiddleware(this IApplicationBuilder app)
     {
-        app.UseMiddleware<MyErrorMiddleware>();
-        return app;
+        return app.UseMiddleware<MyErrorMiddleware>();
+        // return app;
     }
 }

@@ -453,11 +453,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "Z:\\B\\ליבשיץ לאה\\Core\\CoreProject\\firstProject.csproj",
+      "projectUniqueName": "Z:\\B\\ליבשיץ לאה\\Core\\CoreProject-main\\firstProject.csproj",
       "projectName": "firstProject",
-      "projectPath": "Z:\\B\\ליבשיץ לאה\\Core\\CoreProject\\firstProject.csproj",
+      "projectPath": "Z:\\B\\ליבשיץ לאה\\Core\\CoreProject-main\\firstProject.csproj",
       "packagesPath": "C:\\Users\\huser\\.nuget\\packages\\",
-      "outputPath": "Z:\\B\\ליבשיץ לאה\\Core\\CoreProject\\obj\\",
+      "outputPath": "Z:\\B\\ליבשיץ לאה\\Core\\CoreProject-main\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

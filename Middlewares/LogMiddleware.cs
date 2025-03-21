@@ -1,3 +1,4 @@
+using System.Diagnostics;
 using firstProject.Models;
 
 namespace CoreProject.Middlewares;
@@ -12,19 +13,25 @@ public class LogMiddleware
 
     public async Task Invoke(HttpContext c)
     {
-        await c.Response.WriteAsync($"Our Log Middleware start\n");
+        // await c.Response.WriteAsync($"Our Log Middleware start\n");
+        // await next(c);
+        // Console.WriteLine($"{c.Request.Path}.{c.Request.Method} "
+        //     + $" Success: {c.Items["success"]}"
+        //     + $" User: {c.User?.FindFirst("userId")?.Value ?? "unknown"}");
+        // // Console.WriteLine("vcxbcxb");
+        // await c.Response.WriteAsync("Our Log Middleware end\n");
+         Console.WriteLine($"{c.Request.Path}.{c.Request.Method} start");
+        var sw = new Stopwatch();
+        sw.Start();
         await next(c);
-        Console.WriteLine($"{c.Request.Path}.{c.Request.Method} "
-            + $" Success: {c.Items["success"]}"
-            + $" User: {c.User?.FindFirst("userId")?.Value ?? "unknown"}");
-        await c.Response.WriteAsync("Our Log Middleware end\n");
-    }
+        Console.WriteLine($"{c.Request.Path}.{c.Request.Method} end after {sw.ElapsedMilliseconds} ms");
+    } //
 }
 
 public static partial class MiddlewareExtantion
 {
-    public static void UseLog(this IApplicationBuilder a)
+    public static IApplicationBuilder UseLogMiddleware(this IApplicationBuilder a)
     {
-        a.UseMiddleware<LogMiddleware>();
+        return a.UseMiddleware<LogMiddleware>();
     }
 }

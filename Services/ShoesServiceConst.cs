@@ -1,80 +1,80 @@
 using Microsoft.AspNetCore.Mvc;
 using firstProject.Models;
 using firstProject.Interfaces;
+using System.Text.Json;
 
 namespace firstProject.Services;
 
-public class ShoesServiceConst:IShoesService
+public class ShoesServiceConst : IShoesService
 {
-    private List<Shoes> list;
-    public ShoesServiceConst()
+    List<Shoes> shoes { get; }
+    private static string fileName="shoes.json";
+    private string filePath;
+    public ShoesServiceConst(IHostEnvironment env)
     {
-        list = new List<Shoes>
+        filePath=Path.Combine(env.ContentRootPath,"Data",fileName);
+        using(var jsonFile =File.OpenText(filePath))
         {
-            new Shoes{ Code=1, Size=38 ,Company="Nike"  ,Color="black" },
-            new Shoes{ Code=2, Size=35 ,Company="Adidas",Color="pink" },
-            new Shoes{ Code=3, Size=45 ,Company="Nike" ,Color="Grey" }
-        };
-    }
-
-    public List<Shoes> Get()
-    {
-        return list;
-    }
-
-    public Shoes Get(int code)
-    {
-        var shoes = list.FirstOrDefault(s => s.Code == code);
-        return shoes;
-    }
-
-    public int Insert(Shoes newShoes)
-    {
-        if (newShoes == null)
-            return -1;
-
-        int maxCode = list.Max(s => s.Code);
-        newShoes.Code = maxCode + 1;
-        list.Add(newShoes);
-
-        return newShoes.Code;
-    }
-
-
-    public bool Update(int Code, Shoes newShoes)
-    {
-        if (newShoes == null || newShoes.Code != Code)
-        {
-            return false;
+            shoes=JsonSerializer.Deserialize<List<Shoes>>(jsonFile.ReadToEnd(),new JsonSerializerOptions
+            {
+                PropertyNameCaseInsensitive=true
+            });
         }
 
-        var shoes = list.FirstOrDefault(s => s.Code == Code);
-        if (shoes == null)
-            return false;
-
-        shoes.Size = newShoes.Size;
-        shoes.Company = newShoes.Company;
-        shoes.Color = newShoes.Color;
-        return true;
+    }
+    private void saveToFile(){
+        File.WriteAllText(filePath,JsonSerializer.Serialize(shoes));
     }
 
-    public bool Delete(int Code)
+    public List<Shoes> GetAll()=>shoes;
+
+    public Shoes Get(int code) =>shoes.FirstOrDefault(s=>s.Code==code);
+
+    public void Insert(Shoes newShoes)
     {
-        var shoes = list.FirstOrDefault(s=>s.Code==Code);
-        if (shoes == null)
-            return false;
-
-        var index = list.IndexOf(shoes);
-        list.RemoveAt(index);
-
-        return true;
+        if (newShoes == null)
+            return;
+        int maxCode = shoes.Max(s => s.Code);
+        newShoes.Code = maxCode + 1;
+        shoes.Add(newShoes);
+        saveToFile();
     }
+
+
+    public void Update( Shoes newShoes)
+    {
+        if (newShoes == null )
+        {
+            return;
+        }
+
+        var shoe = shoes.FirstOrDefault(s => s.Code == newShoes.Code);
+        if (shoe == null)
+            return;
+
+        shoe.Size = newShoes.Size;
+        shoe.Company = newShoes.Company;
+        shoe.Color = newShoes.Color;
+        saveToFile();
+    }
+
+    public void Delete(int Code)
+    {
+        var shoe =Get(Code);
+        if (shoes is null)
+            return;
+        shoes.Remove(shoe);
+        saveToFile();
+    }
+
+
+    public int Count =>shoes.Count();
 }
 
 public static class ShoeUtilities
 {
     public static void AddShoeConst(this IServiceCollection services)
     {
-        services.AddSingleton<IShoesService,ShoesServiceConst>();
+        services.AddSingleton<IShoesService, ShoesServiceConst>();
     }
 }
