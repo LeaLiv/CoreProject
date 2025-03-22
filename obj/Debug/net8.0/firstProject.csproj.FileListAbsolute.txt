@@ -144,3 +144,4 @@ C:\Lea\Core\CoreProject\obj\Debug\net8.0\staticwebassets.pack.json
 C:\Lea\Core\CoreProject\obj\Debug\net8.0\firstPro.4E4E8AFB.Up2Date
 C:\Lea\Core\CoreProject\obj\Debug\net8.0\firstProject.genruntimeconfig.cache
 C:\Lea\Core\CoreProject\obj\Debug\net8.0\ref\firstProject.dll
+C:\Lea\Core\CoreProject\bin\Debug\net8.0\Data\users.json

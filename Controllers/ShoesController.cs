@@ -10,11 +10,11 @@ namespace firstProject.Controllers
     public class ShoesController : ControllerBase
     {
 
-        IShoesService ShoesService;
+        IService<Shoes> ShoesService;
 
-        public ShoesController(IShoesService shoesService)
+        public ShoesController(IService<Shoes> shoesService)
         {
-            this.ShoesService = shoesService;
+             ShoesService = shoesService;
         }
 
         [HttpGet]
@@ -48,21 +48,21 @@ namespace firstProject.Controllers
         [HttpPut("{code}")]
         public IActionResult Update(int code, Shoes newShoes)
         {
-            Console.WriteLine("in start Put method");
+            // Console.WriteLine("in start Put method");
             if (code != newShoes.Code)
             {
-                Console.WriteLine(@"code != newShoes.Code code: {code} newShoes: {newShoes}");
+                //Console.WriteLine(@"code != newShoes.Code code: {code} newShoes: {newShoes}");
                 return BadRequest();
 
             }
-            Console.WriteLine("in Put method");
+           //Console.WriteLine("in Put method");
             var existingShoe = ShoesService.Get(code);
             if (existingShoe is null)
             {
                 return NotFound();
             }
             ShoesService.Update(newShoes);
-            Console.WriteLine("in end Put method");
+            // Console.WriteLine("in end Put method");
             return NoContent();
         }
 
@@ -75,7 +75,7 @@ namespace firstProject.Controllers
                 return NotFound();
             }
             ShoesService.Delete(code);
-            return Content(ShoesService.Count.ToString());
+            return Content(ShoesService.GetAll().Count.ToString());
         }
     }
 }

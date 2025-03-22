@@ -1,5 +1,4 @@
 using CoreProject.Middlewares;
-using firstProject.Interfaces;
 using firstProject.Services;
 var builder = WebApplication.CreateBuilder(args);
 
@@ -9,6 +8,8 @@ builder.Services.AddControllers().AddJsonOptions(options=>{
     options.JsonSerializerOptions.Encoder = System.Text.Encodings.Web.JavaScriptEncoder.UnsafeRelaxedJsonEscaping;
 });
 builder.Services.AddShoeConst();
+builder.Services.AddUserConst();
+
 // Learn more about configuring OpenAPI at https://aka.ms/aspnet/openapi
 // builder.Services.AddOpenApi();
 

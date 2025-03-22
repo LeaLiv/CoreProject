@@ -5,7 +5,7 @@ using System.Text.Json;
 
 namespace firstProject.Services;
 
-public class ShoesServiceConst : IShoesService
+public class ShoesServiceConst : IService<Shoes>
 {
     List<Shoes> shoes { get; }
     private static string fileName="shoes.json";
@@ -68,13 +68,13 @@ public class ShoesServiceConst : IShoesService
     }
 
 
-    public int Count =>shoes.Count();
+    // public int Count =>shoes.Count();
 }
 
 public static class ShoeUtilities
 {
     public static void AddShoeConst(this IServiceCollection services)
     {
-        services.AddSingleton<IShoesService, ShoesServiceConst>();
+        services.AddSingleton<IService<Shoes>, ShoesServiceConst>();
     }
 }
