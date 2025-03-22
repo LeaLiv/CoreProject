@@ -46,6 +46,7 @@ public class MyErrorMiddleware
         catch (Exception e)
         {
             // c.Response.StatusCode = 500;
+            c.Response.WriteAsync($"e {e}");
             await c.Response.WriteAsync("go to technical support");
         }
     }

@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "f6SNNBGCDwIpxp5qlsV3pZYxh9Hdv28J+UxqKLw6ydo=",
+  "Hash": "/bYTepKEPAJ2UK+LDsJzbh74kE/w7Wx7S9IseQe/wM0=",
   "Source": "firstProject",
   "BasePath": "_content/firstProject",
   "Mode": "Default",
@@ -73,8 +73,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "puszp8voml",
-      "Integrity": "L7otTT4w96vse5AG6XL/d4Wo1X2WSrTTqNN2muYn4iQ=",
+      "Fingerprint": "9vwcf7r50d",
+      "Integrity": "m/MpGcUe2i/yWTcwKsAeGrVraG51oxU30nkNe1TqqXE=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\js\\site.js"
@@ -246,6 +246,51 @@
       ]
     },
     {
+      "Route": "js/site.9vwcf7r50d.js",
+      "AssetFile": "C:\\Lea\\Core\\CoreProject\\wwwroot\\js\\site.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "4146"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"m/MpGcUe2i/yWTcwKsAeGrVraG51oxU30nkNe1TqqXE=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 22 Mar 2025 19:12:36 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "9vwcf7r50d"
+        },
+        {
+          "Name": "label",
+          "Value": "js/site.js"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-m/MpGcUe2i/yWTcwKsAeGrVraG51oxU30nkNe1TqqXE="
+        }
+      ]
+    },
+    {
       "Route": "js/site.js",
       "AssetFile": "C:\\Lea\\Core\\CoreProject\\wwwroot\\js\\site.js",
       "Selectors": [],
@@ -256,7 +301,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "4864"
+          "Value": "4146"
         },
         {
           "Name": "Content-Type",
@@ -264,11 +309,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"L7otTT4w96vse5AG6XL/d4Wo1X2WSrTTqNN2muYn4iQ=\""
+          "Value": "\"m/MpGcUe2i/yWTcwKsAeGrVraG51oxU30nkNe1TqqXE=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 21 Mar 2025 12:45:54 GMT"
+          "Value": "Sat, 22 Mar 2025 19:12:36 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -278,52 +323,7 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-L7otTT4w96vse5AG6XL/d4Wo1X2WSrTTqNN2muYn4iQ="
-        }
-      ]
-    },
-    {
-      "Route": "js/site.puszp8voml.js",
-      "AssetFile": "C:\\Lea\\Core\\CoreProject\\wwwroot\\js\\site.js",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "4864"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/javascript"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"L7otTT4w96vse5AG6XL/d4Wo1X2WSrTTqNN2muYn4iQ=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Fri, 21 Mar 2025 12:45:54 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "puszp8voml"
-        },
-        {
-          "Name": "label",
-          "Value": "js/site.js"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-L7otTT4w96vse5AG6XL/d4Wo1X2WSrTTqNN2muYn4iQ="
+          "Value": "sha256-m/MpGcUe2i/yWTcwKsAeGrVraG51oxU30nkNe1TqqXE="
         }
       ]
     }

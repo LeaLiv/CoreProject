@@ -8,7 +8,7 @@ function getItems() {
         .catch(error => console.error('Unable to get items.', error));
 }
 
-const addItem=()=> {
+const addItem = () => {
     console.log("in addItem");
     // const addCode = document.getElementById('add-code');
     const addSize = document.getElementById('add-size');
@@ -17,7 +17,7 @@ const addItem=()=> {
 
 
     const item = {
-        code: shoeses.length + 1,    
+        code: shoeses.length + 1,
         size: addSize.value,
         company: addCompany.value.trim(),
         color: addColor.value.trim()
@@ -35,10 +35,9 @@ const addItem=()=> {
         .then(response => response.json())
         .then(() => {
             getItems();
-            addCode.value = "";
             addSize.value = "";
             addCompany.value = "";
-            addColor.value = "";
+            addColor.value = "#000000";
         })
         .catch(error => console.error('Unable to add item.', error));
 }
@@ -65,8 +64,8 @@ function updateItem() {
     const itemCode = document.getElementById('edit-Code').value;
     const item = {
         code: parseInt(itemCode, 10),
-        size: document.getElementById('edit-Company').value.trim(),
-        company: document.getElementById('edit-Size').value,
+        size: document.getElementById('edit-Size').value,
+        company: document.getElementById('edit-Company').value.trim(),
         color: document.getElementById('edit-Color').value
     };
 
@@ -84,6 +83,7 @@ function updateItem() {
     closeInput();
 
     return false;
+
 }
 
 function closeInput() {
@@ -117,14 +117,14 @@ function _displayItems(data) {
         let tr = tBody.insertRow();
 
         let td1 = tr.insertCell(0);
-        let textNodeSize= document.createTextNode(item.size);
+        let textNodeSize = document.createTextNode(item.size);
         td1.appendChild(textNodeSize);
 
-        let td2=tr.insertCell(1);
-        let textNodeCompany= document.createTextNode(item.company);
+        let td2 = tr.insertCell(1);
+        let textNodeCompany = document.createTextNode(item.company);
         td2.appendChild(textNodeCompany);
 
-        let td3=tr.insertCell(2);
+        let td3 = tr.insertCell(2);
         td3.style.backgroundColor = item.color;
 
         let td5 = tr.insertCell(3);
