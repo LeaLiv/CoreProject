@@ -145,3 +145,12 @@ C:\Lea\Core\CoreProject\obj\Debug\net8.0\firstPro.4E4E8AFB.Up2Date
 C:\Lea\Core\CoreProject\obj\Debug\net8.0\firstProject.genruntimeconfig.cache
 C:\Lea\Core\CoreProject\obj\Debug\net8.0\ref\firstProject.dll
 C:\Lea\Core\CoreProject\bin\Debug\net8.0\Data\users.json
+C:\Lea\Core\CoreProject\bin\Debug\net8.0\Microsoft.AspNetCore.OpenApi.dll
+C:\Lea\Core\CoreProject\bin\Debug\net8.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+C:\Lea\Core\CoreProject\bin\Debug\net8.0\Microsoft.IdentityModel.Abstractions.dll
+C:\Lea\Core\CoreProject\bin\Debug\net8.0\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Lea\Core\CoreProject\bin\Debug\net8.0\Microsoft.IdentityModel.Logging.dll
+C:\Lea\Core\CoreProject\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.dll
+C:\Lea\Core\CoreProject\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\Lea\Core\CoreProject\bin\Debug\net8.0\Microsoft.IdentityModel.Tokens.dll
+C:\Lea\Core\CoreProject\bin\Debug\net8.0\System.IdentityModel.Tokens.Jwt.dll
