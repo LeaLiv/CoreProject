@@ -10,4 +10,6 @@ public class User
 
     public string UserNAme { get; set; }
     public string Role { get; set; }
+    public string Password {get; set;}
+    
 }

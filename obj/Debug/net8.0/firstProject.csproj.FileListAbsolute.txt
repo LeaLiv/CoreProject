@@ -154,3 +154,4 @@ C:\Lea\Core\CoreProject\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.dll
 C:\Lea\Core\CoreProject\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
 C:\Lea\Core\CoreProject\bin\Debug\net8.0\Microsoft.IdentityModel.Tokens.dll
 C:\Lea\Core\CoreProject\bin\Debug\net8.0\System.IdentityModel.Tokens.Jwt.dll
+C:\Lea\Core\CoreProject\bin\Debug\net8.0\Scalar.AspNetCore.dll

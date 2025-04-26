@@ -1,52 +1,17 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Shoes CRUD</title>
-    <link rel="stylesheet" href="./css/site.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
 </head>
-
 <body>
-    <h1>Shoes CRUD</h1>
-    <h3>Add</h3>
-    <form action="javascript:void(0);" method="POST" onsubmit="addItem()">
-        <!-- <input type="text" id="add-code" placeholder="New Shoes Code"> -->
-        <input type="number" id="add-size" placeholder="New Shoes Size"  min="18" max="50">
-        <input type="text" id="add-company" placeholder="New Shoes Company">
-        <input type="color" id="add-color" placeholder="New Shoes Color">
-        <input type="submit" value="Add">
+    <h1>Login page</h1>
+    <form onsubmit="checkDetails()">
+        <label for=""></label>
     </form>
-
-    <div id="editForm">
-        <h3>Edit</h3>
-        <form action="javascript:void(0);" onsubmit="updateItem()">
-            <input type="hidden" id="edit-Code">
-            <input type="number" id="edit-Size" min="18" max="50">
-            <input type="text" id="edit-Company">
-            <input type="color" id="edit-Color">
-            <input type="submit" value="Save">
-            <a onclick="closeInput()" aria-label="Close">&#10006;</a>
-        </form>
-    </div>
-
-    <p id="counter"></p>
-
-    <table>
-        <tr>
-            <th>Size</th>
-            <th>Company</th>
-            <th>Color</th>
-            <th></th>
-            <th></th>
-        </tr>
-        <tbody id="shoeses"></tbody>
-    </table>
-
-    <script src="./js/site.js" asp-append-version="true"></script>
-    <script type="text/javascript">
-        getItems();
-    </script>
+    <a href="./show.html">press here</a>
+    
 </body>
-
+<script src="./js/login.js"></script>
 </html>

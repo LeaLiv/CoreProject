@@ -1,0 +1,4 @@
+const checkDetails=()=>{
+    const a=[];
+    
+}

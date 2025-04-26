@@ -1,6 +1,7 @@
-
+using System.Security.Claims;
 using firstProject.Interfaces;
 using firstProject.Models;
+using firstProject.Services;
 using Microsoft.AspNetCore.Mvc;
 
 namespace firstProject.Controllers
@@ -17,8 +18,7 @@ namespace firstProject.Controllers
         }
 
         [HttpGet]
-        public ActionResult<List<User>> GetAll() =>
-        UserService.GetAll();
+        public ActionResult<List<User>> GetAll() => UserService.GetAll();
 
         [HttpGet("{id}")]
         public ActionResult<User> Get(int id)
@@ -58,6 +58,31 @@ namespace firstProject.Controllers
                 return NotFound();
             UserService.Delete(id);
             return NoContent();
+        }
+
+        [HttpPost]
+        [Route("[action]")]
+        public IActionResult Login([FromBody] User user)
+        {
+            var claims = new List<Claim>();
+            var dt = DateTime.Now;
+            if (user.Role != "admin" || !user.Password.StartsWith("admin"))
+            {
+                claims = new List<Claim>
+                {
+                    new Claim("type","user")
+                };
+            }
+
+            else
+            {
+                claims = new List<Claim>
+                {
+                    new Claim("type","admin")
+                };
+            }
+            var token = UserTokenService.GetToken(claims);
+            return new OkObjectResult(UserTokenService.WriteToken(token));
         }
     }
 }

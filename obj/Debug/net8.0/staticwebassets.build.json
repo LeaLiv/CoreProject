@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "zDNUq+MDfIwBVbrzP3/yB3sW1lNDGZA2YPDDymzVYlQ=",
+  "Hash": "X0C42NVlP57/kxr497kJU2Wj+RXVhPJPvjsz6v96fWY=",
   "Source": "firstProject",
   "BasePath": "_content/firstProject",
   "Mode": "Default",
@@ -52,11 +52,32 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "0n0i0sikl5",
-      "Integrity": "vOO7mVVBrDw8fF2FypFQRzkTpoBVFqmwX4097InWCjg=",
+      "Fingerprint": "xajsb7h28k",
+      "Integrity": "R7hyRvzMjkPcX7lFB2gtEar//7u8IWxofubwP5bB7jM=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\index.html"
+    },
+    {
+      "Identity": "C:\\Lea\\Core\\CoreProject\\wwwroot\\js\\login.js",
+      "SourceId": "firstProject",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Lea\\Core\\CoreProject\\wwwroot\\",
+      "BasePath": "_content/firstProject",
+      "RelativePath": "js/login#[.{fingerprint}]?.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "tzincf12ay",
+      "Integrity": "F4j+AWKrzXay3CS9MLzIcB3Qk2WvDsPJeakBadLHBNQ=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\js\\login.js"
     },
     {
       "Identity": "C:\\Lea\\Core\\CoreProject\\wwwroot\\js\\site.js",
@@ -78,6 +99,27 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\js\\site.js"
+    },
+    {
+      "Identity": "C:\\Lea\\Core\\CoreProject\\wwwroot\\show.html",
+      "SourceId": "firstProject",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Lea\\Core\\CoreProject\\wwwroot\\",
+      "BasePath": "_content/firstProject",
+      "RelativePath": "show#[.{fingerprint}]?.html",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "0n0i0sikl5",
+      "Integrity": "vOO7mVVBrDw8fF2FypFQRzkTpoBVFqmwX4097InWCjg=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\show.html"
     }
   ],
   "Endpoints": [
@@ -164,51 +206,6 @@
       ]
     },
     {
-      "Route": "index.0n0i0sikl5.html",
-      "AssetFile": "C:\\Lea\\Core\\CoreProject\\wwwroot\\index.html",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "1570"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/html"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"vOO7mVVBrDw8fF2FypFQRzkTpoBVFqmwX4097InWCjg=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Fri, 21 Mar 2025 12:25:11 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "0n0i0sikl5"
-        },
-        {
-          "Name": "label",
-          "Value": "index.html"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-vOO7mVVBrDw8fF2FypFQRzkTpoBVFqmwX4097InWCjg="
-        }
-      ]
-    },
-    {
       "Route": "index.html",
       "AssetFile": "C:\\Lea\\Core\\CoreProject\\wwwroot\\index.html",
       "Selectors": [],
@@ -219,7 +216,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "1570"
+          "Value": "404"
         },
         {
           "Name": "Content-Type",
@@ -227,11 +224,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"vOO7mVVBrDw8fF2FypFQRzkTpoBVFqmwX4097InWCjg=\""
+          "Value": "\"R7hyRvzMjkPcX7lFB2gtEar//7u8IWxofubwP5bB7jM=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 21 Mar 2025 12:25:11 GMT"
+          "Value": "Fri, 25 Apr 2025 11:21:59 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -241,7 +238,134 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-vOO7mVVBrDw8fF2FypFQRzkTpoBVFqmwX4097InWCjg="
+          "Value": "sha256-R7hyRvzMjkPcX7lFB2gtEar//7u8IWxofubwP5bB7jM="
+        }
+      ]
+    },
+    {
+      "Route": "index.xajsb7h28k.html",
+      "AssetFile": "C:\\Lea\\Core\\CoreProject\\wwwroot\\index.html",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "404"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/html"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"R7hyRvzMjkPcX7lFB2gtEar//7u8IWxofubwP5bB7jM=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 25 Apr 2025 11:21:59 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "xajsb7h28k"
+        },
+        {
+          "Name": "label",
+          "Value": "index.html"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-R7hyRvzMjkPcX7lFB2gtEar//7u8IWxofubwP5bB7jM="
+        }
+      ]
+    },
+    {
+      "Route": "js/login.js",
+      "AssetFile": "C:\\Lea\\Core\\CoreProject\\wwwroot\\js\\login.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "50"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"F4j+AWKrzXay3CS9MLzIcB3Qk2WvDsPJeakBadLHBNQ=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 25 Apr 2025 11:52:24 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-F4j+AWKrzXay3CS9MLzIcB3Qk2WvDsPJeakBadLHBNQ="
+        }
+      ]
+    },
+    {
+      "Route": "js/login.tzincf12ay.js",
+      "AssetFile": "C:\\Lea\\Core\\CoreProject\\wwwroot\\js\\login.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "50"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"F4j+AWKrzXay3CS9MLzIcB3Qk2WvDsPJeakBadLHBNQ=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 25 Apr 2025 11:52:24 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "tzincf12ay"
+        },
+        {
+          "Name": "label",
+          "Value": "js/login.js"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-F4j+AWKrzXay3CS9MLzIcB3Qk2WvDsPJeakBadLHBNQ="
         }
       ]
     },
@@ -324,6 +448,88 @@
         {
           "Name": "integrity",
           "Value": "sha256-ja28400rEf4Ka+nn+Vd3MIybp2TtM/xZ8M5o0SkNC8Y="
+        }
+      ]
+    },
+    {
+      "Route": "show.0n0i0sikl5.html",
+      "AssetFile": "C:\\Lea\\Core\\CoreProject\\wwwroot\\show.html",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1570"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/html"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"vOO7mVVBrDw8fF2FypFQRzkTpoBVFqmwX4097InWCjg=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 21 Mar 2025 12:25:11 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "0n0i0sikl5"
+        },
+        {
+          "Name": "label",
+          "Value": "show.html"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-vOO7mVVBrDw8fF2FypFQRzkTpoBVFqmwX4097InWCjg="
+        }
+      ]
+    },
+    {
+      "Route": "show.html",
+      "AssetFile": "C:\\Lea\\Core\\CoreProject\\wwwroot\\show.html",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1570"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/html"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"vOO7mVVBrDw8fF2FypFQRzkTpoBVFqmwX4097InWCjg=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 21 Mar 2025 12:25:11 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-vOO7mVVBrDw8fF2FypFQRzkTpoBVFqmwX4097InWCjg="
         }
       ]
     }

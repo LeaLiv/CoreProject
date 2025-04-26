@@ -21,7 +21,7 @@
           "Microsoft.AspNetCore.App"
         ]
       },
-      "Microsoft.AspNetCore.OpenApi/8.0.0": {
+      "Microsoft.AspNetCore.OpenApi/8.0.15": {
         "type": "package",
         "dependencies": {
           "Microsoft.OpenApi": "1.4.3"
@@ -159,6 +159,22 @@
           }
         }
       },
+      "Scalar.AspNetCore/2.2.1": {
+        "type": "package",
+        "compile": {
+          "lib/net8.0/Scalar.AspNetCore.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0/Scalar.AspNetCore.dll": {
+            "related": ".xml"
+          }
+        },
+        "frameworkReferences": [
+          "Microsoft.AspNetCore.App"
+        ]
+      },
       "Swashbuckle.AspNetCore/6.6.2": {
         "type": "package",
         "dependencies": {
@@ -257,10 +273,10 @@
         "microsoft.aspnetcore.authentication.jwtbearer.nuspec"
       ]
     },
-    "Microsoft.AspNetCore.OpenApi/8.0.0": {
-      "sha512": "T4mwMvPSOYAp+KeQ4xO8H2rxpiOMJ9W/7yBBkUTMp96AHtGlPN4s7hbax2tM61LxTY775JKL4fiv5grn41EHXw==",
+    "Microsoft.AspNetCore.OpenApi/8.0.15": {
+      "sha512": "Nu/I5tek+FbumgyrfNAxcPZd8uQi6VTYfZ+6Wr/JYrHFM6zb6DJx99v5QjMnsf9ePHkUto0zvUFVaA2gpiV9mQ==",
       "type": "package",
-      "path": "microsoft.aspnetcore.openapi/8.0.0",
+      "path": "microsoft.aspnetcore.openapi/8.0.15",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -268,7 +284,7 @@
         "THIRD-PARTY-NOTICES.TXT",
         "lib/net8.0/Microsoft.AspNetCore.OpenApi.dll",
         "lib/net8.0/Microsoft.AspNetCore.OpenApi.xml",
-        "microsoft.aspnetcore.openapi.8.0.0.nupkg.sha512",
+        "microsoft.aspnetcore.openapi.8.0.15.nupkg.sha512",
         "microsoft.aspnetcore.openapi.nuspec"
       ]
     },
@@ -656,6 +672,23 @@
         "microsoft.openapi.nuspec"
       ]
     },
+    "Scalar.AspNetCore/2.2.1": {
+      "sha512": "l+DSBGFJEZJPTrwa2K5DVbcnmCxecerv8VieRFlrxP4ai2Bhb6N9HfcMN+Z7WF2Nkm4jDo7czEuZCzM+/VXY3w==",
+      "type": "package",
+      "path": "scalar.aspnetcore/2.2.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "README.md",
+        "icon.png",
+        "lib/net8.0/Scalar.AspNetCore.dll",
+        "lib/net8.0/Scalar.AspNetCore.xml",
+        "lib/net9.0/Scalar.AspNetCore.dll",
+        "lib/net9.0/Scalar.AspNetCore.xml",
+        "scalar.aspnetcore.2.2.1.nupkg.sha512",
+        "scalar.aspnetcore.nuspec"
+      ]
+    },
     "Swashbuckle.AspNetCore/6.6.2": {
       "sha512": "+NB4UYVYN6AhDSjW0IJAd1AGD8V33gemFNLPaxKTtPkHB+HaKAKf9MGAEUPivEWvqeQfcKIw8lJaHq6LHljRuw==",
       "type": "package",
@@ -785,7 +818,8 @@
   "projectFileDependencyGroups": {
     "net8.0": [
       "Microsoft.AspNetCore.Authentication.JwtBearer >= 8.0.0",
-      "Microsoft.AspNetCore.OpenApi >= 8.0.0",
+      "Microsoft.AspNetCore.OpenApi >= 8.0.15",
+      "Scalar.AspNetCore >= 2.2.1",
       "Swashbuckle.AspNetCore >= 6.6.2"
     ]
   },
@@ -846,7 +880,11 @@
           },
           "Microsoft.AspNetCore.OpenApi": {
             "target": "Package",
-            "version": "[8.0.0, )"
+            "version": "[8.0.15, )"
+          },
+          "Scalar.AspNetCore": {
+            "target": "Package",
+            "version": "[2.2.1, )"
           },
           "Swashbuckle.AspNetCore": {
             "target": "Package",

@@ -15,7 +15,7 @@ public class ShoesServiceConst : IService<Shoes>
         filePath=Path.Combine(env.ContentRootPath,"Data",fileName);
         using(var jsonFile =File.OpenText(filePath))
         {
-            shoes=JsonSerializer.Deserialize<List<Shoes>>(jsonFile.ReadToEnd(),new JsonSerializerOptions
+            shoes = JsonSerializer.Deserialize<List<Shoes>>(jsonFile.ReadToEnd(), new JsonSerializerOptions
             {
                 PropertyNameCaseInsensitive=true
             });
