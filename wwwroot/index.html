@@ -7,8 +7,14 @@
 </head>
 <body>
     <h1>Login page</h1>
-    <form onsubmit="checkDetails()">
-        <label for=""></label>
+    <form onsubmit="checkDetails(e)">
+        <label for="username">User name: </label>
+        <input type="text" id="username" placeholder="Username">
+        <br><br/>
+        <label for="password">Password: </label>
+        <input type="password" id="password" placeholder="Password">
+        <br>
+        <button type="submit">log-in</button>
     </form>
     <a href="./show.html">press here</a>
     

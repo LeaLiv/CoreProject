@@ -10,7 +10,11 @@ public class ShoesServiceConst : IService<Shoes>
     List<Shoes> shoes { get; }
     private static string fileName="shoes.json";
     private string filePath;
+#pragma warning disable CS8618 // Non-nullable field must contain a non-null value when exiting constructor. Consider adding the 'required' modifier or declaring as nullable.
+
     public ShoesServiceConst(IHostEnvironment env)
+#pragma warning restore CS8618 // Non-nullable field must contain a non-null value when exiting constructor. Consider adding the 'required' modifier or declaring as nullable.
+
     {
         filePath=Path.Combine(env.ContentRootPath,"Data",fileName);
         using(var jsonFile =File.OpenText(filePath))

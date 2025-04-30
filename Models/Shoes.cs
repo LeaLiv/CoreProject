@@ -9,4 +9,6 @@ public class Shoes
     public string Company { get; set; }
 
     public string Color { get; set; }
+    public int UserId { get; set; }
+
 }

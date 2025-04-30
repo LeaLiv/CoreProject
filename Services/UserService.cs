@@ -15,7 +15,7 @@ public class UserService:IService<User>
         filePath=Path.Combine(env.ContentRootPath,"Data",fileName);
         using(var jsonFile =File.OpenText(filePath))
         {
-            users=JsonSerializer.Deserialize<List<User>>(jsonFile.ReadToEnd(),new JsonSerializerOptions
+            users = JsonSerializer.Deserialize<List<User>>(jsonFile.ReadToEnd(), new JsonSerializerOptions
             {
                 PropertyNameCaseInsensitive=true
             });
@@ -62,6 +62,9 @@ public class UserService:IService<User>
                 return;
           users.Remove(user);
           saveToFile();
+    }
+    public User GetByUserName(string userName){
+        return users.FirstOrDefault(s=>s.UserNAme==userName);
     }
 }
 public static class UserUtilities
