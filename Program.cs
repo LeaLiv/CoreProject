@@ -33,7 +33,7 @@ builder
     {
         options.DefaultScheme = JwtBearerDefaults.AuthenticationScheme;
     })
-    .AddJwtBearer(cfg =>
+    .AddJwtBearer("Bearer",cfg =>
     {
         cfg.RequireHttpsMetadata = false;
         cfg.TokenValidationParameters = UserTokenService.GetTokenValidationParameters();
@@ -48,28 +48,24 @@ builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen(c =>
 {
     c.SwaggerDoc("v1", new OpenApiInfo { Title = "Core", Version = "v1" });
-    c.AddSecurityDefinition(
-        "Bearer",
-        new OpenApiSecurityScheme
+    var SecurityScheme=new OpenApiSecurityScheme
         {
             In = ParameterLocation.Header,
             Description = "Please enter JWT with Bearer into field",
             Name = "Authorization",
             Type = SecuritySchemeType.ApiKey,
-        }
+            Scheme="bearer",
+            BearerFormat = "JWT"
+        };
+    c.AddSecurityDefinition(
+        "Bearer",SecurityScheme
+        
     );
     c.AddSecurityRequirement(
         new OpenApiSecurityRequirement
         {
             {
-                new OpenApiSecurityScheme
-                {
-                    Reference = new OpenApiReference
-                    {
-                        Type = ReferenceType.SecurityScheme,
-                        Id = "Bearer",
-                    },
-                },
+                SecurityScheme,
                 new string[] { }
             },
         }
@@ -81,7 +77,7 @@ builder.Services.AddSwaggerGen(c =>
 
 // builder.Services.AddSingleton<IShoesService,ShoesServiceConst>();
 var app = builder.Build();
-
+UserTokenService.InitializeUserService(app.Environment);
 // Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())
 {

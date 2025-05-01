@@ -4,7 +4,7 @@ using System.Text.Json;
 
 namespace firstProject.Services;
 
-public class UserService:IService<User>
+public class UserService:IUserService
 {
     List<User> users { get; }
 
@@ -22,6 +22,8 @@ public class UserService:IService<User>
         }
 
     }
+
+
     private void saveToFile(){
         File.WriteAllText(filePath,JsonSerializer.Serialize(users));
     }
@@ -71,6 +73,6 @@ public static class UserUtilities
 {
     public static void AddUserConst(this IServiceCollection services)
     {
-        services.AddSingleton<IService<User>,UserService>();
+        services.AddSingleton<IUserService,UserService>();
     }
 }

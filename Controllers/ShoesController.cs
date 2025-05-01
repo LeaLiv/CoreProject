@@ -23,10 +23,12 @@ namespace firstProject.Controllers
         [HttpGet]
         [Authorize(Policy = "user")]
         public ActionResult<List<Shoes>> GetAll() {
+            System.Console.WriteLine("GetAll called");
             string token = Request.Headers["Authorization"].ToString();
             User loggedUser = UserTokenService.GetUserFromToken(token);
             if (loggedUser.Role== "admin")
                 return ShoesService.GetAll();
+            System.Console.WriteLine(loggedUser.Name);
             return ShoesService.GetAll().Where(s => s.UserId == loggedUser.Id).ToList();
         }
 

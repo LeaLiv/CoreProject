@@ -9,7 +9,7 @@ const checkDetails=async (event)=>{
         "UserName": username,
         "Password": password
     }
-    const response= await fetch(uri,{
+    const response= await fetch(`${uri}/Login`,{
         method: 'POST',
         headers: {
             'Content-Type': 'application/json'
@@ -17,11 +17,10 @@ const checkDetails=async (event)=>{
         body: JSON.stringify(loginuser)
     })
 
-    console.log(loginuser);
+    // console.log(loginuser);
     if(response.ok){
-        const token=await response.json();
+        const token=await response.text();
         localStorage.setItem("token",token);
-        
         window.location.href='show.html'
     }
     

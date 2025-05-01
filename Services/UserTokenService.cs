@@ -3,16 +3,28 @@ using System.IdentityModel.Tokens.Jwt;
 using System.Security.Claims;
 using System.Text;
 using firstProject.Models;
+using Microsoft.Extensions;
 using Microsoft.IdentityModel.Tokens;
 
 namespace firstProject.Services
 {
     public static class UserTokenService
     {
-        private static UserService UserService;
+        private static UserService userService;//=new UserService();
+
+    public static void InitializeUserService(IHostEnvironment env){
+        if(userService == null)
+        {
+            userService = new UserService(env);
+        }
+    }
         private static SymmetricSecurityKey key = new SymmetricSecurityKey(
             Encoding.UTF8.GetBytes("SXkSqsKyNUyvGbnHs7ke2NCq8zQzNLW7mPmHbnZZ")
         );
+        // private static Lazy<UserService> userService = new Lazy<UserService>(() =>
+        // {
+        //     var env = new HostEnvironment(); 
+        //         });
 
         private static string issuer = "https://shoes.com";
         public static SecurityToken GetToken(List<Claim> claims) =>
@@ -39,7 +51,7 @@ new TokenValidationParameters
         public static User GetUserFromToken(string token)
         {
             string id = decoderToken(token);
-            return UserService.Get(int.Parse(id));
+            return userService.Get(int.Parse(id));
         }
 
         public static string decoderToken(string token)

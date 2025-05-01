@@ -12,9 +12,9 @@ namespace firstProject.Controllers
     [Route("[controller]")]
     public class UsersController : ControllerBase
     {
-        IService<User> UserService;
+        IUserService UserService;
 
-        public UsersController(IService<User> userService)
+        public UsersController(IUserService userService)
         {
             UserService = userService;
         }
@@ -41,20 +41,25 @@ namespace firstProject.Controllers
         [Authorize(Policy="admin")]
         public IActionResult Post(User newUser)
         {
+            newUser.Password = PasswordService.HashPassword(newUser.Password);
             UserService.Insert(newUser);
             return CreatedAtAction(nameof(Post), new { Id = newUser.Id }, newUser);
         }
 
         [HttpPut("{id}")]
+        [Authorize(Policy="user")]
         public IActionResult Update(int id, User newUser)
         {
             if (id != newUser.Id)
             {
                 return BadRequest();
             }
+
             var existingUser = UserService.Get(id);
             if (existingUser is null)
                 return NotFound();
+            if(existingUser.Role=="user" && newUser.Role=="admin")
+            return Forbid();
             UserService.Update(newUser);
             return NoContent();
         }
@@ -76,28 +81,23 @@ namespace firstProject.Controllers
         [Route("[action]")]
         public IActionResult Login([FromBody] LoginRequest user)
         {
-            var RequestUser=UserService.GetByUserName(user.UserNAme);
-            var claims = new List<Claim>();
+            // System.Console.WriteLine("in Login method called");
+            User RequestUser=UserService.GetByUserName(user.UserName);           
             var dt = DateTime.Now;
-            var RequestUser=UserService.Get(user.Id);
-            if (RequestUser==null || RequestUser.Password!=user.Password || RequestUser.UserNAme!=user.UserNAme)
+            if (RequestUser==null || !PasswordService.VerifyPassword(user.Password,RequestUser.Password ) || RequestUser.UserNAme!=user.UserName)
                 return Unauthorized();
-            if (RequestUser.Role != "admin" || !RequestUser.Password.StartsWith("admin"))
+            var claims = new List<Claim>
             {
-                claims = new List<Claim>
-                {
-                    new Claim("type","user"),
-                    new Claim("id",RequestUser.Id.ToString()),
-                };
+                 new Claim("id",RequestUser.Id.ToString())
+            };
+            if (RequestUser.Role == "admin")
+            {
+                claims.Add(new Claim("type","admin"));
             }
 
             else
             {
-                claims = new List<Claim>
-                {
-                    new Claim("type","admin"),
-                    new Claim("id",RequestUser.Id.ToString()),
-                };
+               claims.Add(new Claim("type","user"));
             }
             var token = UserTokenService.GetToken(claims);
             return new OkObjectResult(UserTokenService.WriteToken(token));
