@@ -1,0 +1,5 @@
+2025-05-04 00:01:17.416 +03:00 [INF] Request Info: {"Timestamp":"2025-05-03T21:01:17.4142203Z","Controller":"Users","Action":"Login","User":"Anonymous","ExecutionTimeMs":205}
+2025-05-04 00:01:18.402 +03:00 [INF] Request Info: {"Timestamp":"2025-05-03T21:01:18.4025409Z","Controller":"Shoes","Action":"GetAll","User":"Anonymous","ExecutionTimeMs":213}
+2025-05-04 00:02:40.935 +03:00 [INF] Request Info: {"Timestamp":"2025-05-03T21:02:40.9335724Z","Controller":"Users","Action":"Login","User":"Anonymous","ExecutionTimeMs":100}
+2025-05-04 00:02:41.247 +03:00 [INF] Request Info: {"Timestamp":"2025-05-03T21:02:41.2474546Z","Controller":"Users","Action":"Login","User":"Anonymous","ExecutionTimeMs":7}
+2025-05-04 00:02:41.687 +03:00 [INF] Request Info: {"Timestamp":"2025-05-03T21:02:41.6878623Z","Controller":"Shoes","Action":"GetAll","User":"johndoe","ExecutionTimeMs":48}

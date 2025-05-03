@@ -51,6 +51,11 @@ new TokenValidationParameters
         public static User GetUserFromToken(string token)
         {
             string id = decoderToken(token);
+            if (string.IsNullOrEmpty(id))
+            {
+                Console.WriteLine("Token does not contain user id");
+                return null;
+            }
             return userService.Get(int.Parse(id));
         }
 

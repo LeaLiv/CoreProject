@@ -6,6 +6,7 @@ using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.IdentityModel.Tokens;
 using Microsoft.OpenApi.Models;
 using Scalar.AspNetCore;
+using Serilog;
 
 
 var builder = WebApplication.CreateBuilder(args);
@@ -71,6 +72,21 @@ builder.Services.AddSwaggerGen(c =>
         }
     );
 });
+/*
+Log.Logger = new LoggerConfiguration()
+    .MinimumLevel.Override("Microsoft", Serilog.Events.LogEventLevel.Warning) // הסתרת לוגים פנימיים
+    .WriteTo.File("logs/log.txt", rollingInterval: RollingInterval.Day)
+    .CreateLogger();
+*/
+
+Log.Logger = new LoggerConfiguration()
+.MinimumLevel.Override("Microsoft", Serilog.Events.LogEventLevel.Warning) 
+    .WriteTo.File("logs/log.txt", rollingInterval: RollingInterval.Day)
+    .CreateLogger();
+
+builder.Logging.ClearProviders();
+builder.Logging.AddSerilog();
+
 
 //c=>{
 //c.SwaggerDoc("v1", new() { Title = "firstProject", Version = "v1" });}
@@ -100,7 +116,7 @@ app.UseStaticFiles();
 app.UseHttpsRedirection();
 
 app.UseAuthorization();
-
+app.UseMiddleware<RequestLoggingMiddleware>();
 app.MapControllers();
 
 app.Run();
