@@ -4,12 +4,18 @@ let token = '';
 
 function getUsers() {
     token = localStorage.getItem("token");
+    
     if (!token) {
         alert("You must log in first");
         window.location.href = "index.html";
         return;
     }
-
+    const payload = JSON.parse(atob(token.split('.')[1]));
+    const role=payload["type"]
+    if(role!="admin"){
+        alert("You are not authorized to this page. You must be an admin to access this page. Please log in again.");
+        window.location.href = "show.html";
+    }
     fetch(uri, {
         method: 'GET',
         headers: {
