@@ -72,20 +72,18 @@ builder.Services.AddSwaggerGen(c =>
         }
     );
 });
-/*
-Log.Logger = new LoggerConfiguration()
-    .MinimumLevel.Override("Microsoft", Serilog.Events.LogEventLevel.Warning) // הסתרת לוגים פנימיים
-    .WriteTo.File("logs/log.txt", rollingInterval: RollingInterval.Day)
-    .CreateLogger();
-*/
+
 
 Log.Logger = new LoggerConfiguration()
 .MinimumLevel.Override("Microsoft", Serilog.Events.LogEventLevel.Warning) 
-    .WriteTo.File("logs/log.txt", rollingInterval: RollingInterval.Day)
+    .WriteTo.File("logs/log.txt", rollingInterval: RollingInterval.Day,
+        fileSizeLimitBytes: 100 * 1024 * 1024,
+        rollOnFileSizeLimit: true) 
     .CreateLogger();
 
-builder.Logging.ClearProviders();
+// builder.Logging.ClearProviders();
 builder.Logging.AddSerilog();
+
 
 
 //c=>{

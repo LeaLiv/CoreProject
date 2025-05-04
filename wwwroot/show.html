@@ -9,7 +9,8 @@
 
 <body>
     <h1>Shoes CRUD</h1>
-    <h3>Add</h3>
+    <a href="./users.html" id="users-page-link" style="display: none;">Users page</a><br>
+    <button onclick="logout()">Log Out</button>
     <form action="javascript:void(0);" method="POST" onsubmit="addItem()">
         <!-- <input type="text" id="add-code" placeholder="New Shoes Code"> -->
         <input type="number" id="add-size" placeholder="New Shoes Size"  min="18" max="50">

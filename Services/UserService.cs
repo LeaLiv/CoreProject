@@ -65,8 +65,8 @@ public class UserService:IUserService
           users.Remove(user);
           saveToFile();
     }
-    public User GetByUserName(string userName){
-        return users.FirstOrDefault(s=>s.UserNAme==userName);
+    public User GetByuserName(string userName){
+        return users.FirstOrDefault(s=>s.userName==userName);
     }
 }
 public static class UserUtilities

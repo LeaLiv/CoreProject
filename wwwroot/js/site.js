@@ -2,10 +2,17 @@ const uri = '/shoes';
 let shoeses = [];
 let token = '';// = localStorage.getItem("token");
 function getItems() {
+
     token = localStorage.getItem("token");
     if (token) {
         const payload = JSON.parse(atob(token.split('.')[1]));
         const userId = payload["id"];
+        const role=payload["type"]
+        if(role=="admin")
+        {
+            const usersPageLink=document.getElementById('users-page-link');
+            usersPageLink.style.display = 'block';
+        }
     }
     else {
         alert("You must log in first");
@@ -86,14 +93,28 @@ function displayEditForm(code) {
     document.getElementById('editForm').style.display = 'block';
 }
 
-function updateItem() {
+async function updateItem() {
     const itemCode = document.getElementById('edit-Code').value;
+    let userId=0;
+    await fetch(`${uri}/${itemCode}`, {
+        method: 'GET',
+        headers: {
+            'Accept': 'application/json',
+            "Authorization": `Bearer ${token}`
+        }
+    }).then(response=> response.json())
+    .then(data=>{userId=data.userId
+    console.log(data)
+    console.log(userId)
+    })
+    .catch(error => console.error('Unable to get item.', error))
+    console.log(userId)
     const item = {
         code: parseInt(itemCode, 10),
         size: document.getElementById('edit-Size').value,
         company: document.getElementById('edit-Company').value.trim(),
         color: document.getElementById('edit-Color').value,
-    
+        userId:userId   
     };
 
     fetch(`${uri}/${itemCode}`, {
@@ -163,4 +184,9 @@ function _displayItems(data) {
     });
 
     shoeses = data;
+}
+const logout=()=>{
+    localStorage.removeItem("token");
+    window.location.href="index.html";
+
 }

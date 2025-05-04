@@ -72,7 +72,6 @@ Z:\B\ליבשיץ לאה\Core\CoreProject\obj\Debug\net8.0\firstProject.genrunti
 Z:\B\ליבשיץ לאה\Core\CoreProject\obj\Debug\net8.0\ref\firstProject.dll
 Z:\B\ליבשיץ לאה\Core\CoreProject-main\bin\Debug\net8.0\appsettings.Development.json
 Z:\B\ליבשיץ לאה\Core\CoreProject-main\bin\Debug\net8.0\appsettings.json
-Z:\B\ליבשיץ לאה\Core\CoreProject-main\bin\Debug\net8.0\firstProject.staticwebassets.endpoints.json
 Z:\B\ליבשיץ לאה\Core\CoreProject-main\bin\Debug\net8.0\firstProject.exe
 Z:\B\ליבשיץ לאה\Core\CoreProject-main\bin\Debug\net8.0\firstProject.deps.json
 Z:\B\ליבשיץ לאה\Core\CoreProject-main\bin\Debug\net8.0\firstProject.runtimeconfig.json
@@ -92,9 +91,7 @@ Z:\B\ליבשיץ לאה\Core\CoreProject-main\obj\Debug\net8.0\firstProject.Mvc
 Z:\B\ליבשיץ לאה\Core\CoreProject-main\obj\Debug\net8.0\scopedcss\bundle\firstProject.styles.css
 Z:\B\ליבשיץ לאה\Core\CoreProject-main\obj\Debug\net8.0\staticwebassets.build.json
 Z:\B\ליבשיץ לאה\Core\CoreProject-main\obj\Debug\net8.0\staticwebassets.development.json
-Z:\B\ליבשיץ לאה\Core\CoreProject-main\obj\Debug\net8.0\staticwebassets.build.endpoints.json
 Z:\B\ליבשיץ לאה\Core\CoreProject-main\obj\Debug\net8.0\staticwebassets\msbuild.firstProject.Microsoft.AspNetCore.StaticWebAssets.props
-Z:\B\ליבשיץ לאה\Core\CoreProject-main\obj\Debug\net8.0\staticwebassets\msbuild.firstProject.Microsoft.AspNetCore.StaticWebAssetEndpoints.props
 Z:\B\ליבשיץ לאה\Core\CoreProject-main\obj\Debug\net8.0\staticwebassets\msbuild.build.firstProject.props
 Z:\B\ליבשיץ לאה\Core\CoreProject-main\obj\Debug\net8.0\staticwebassets\msbuild.buildMultiTargeting.firstProject.props
 Z:\B\ליבשיץ לאה\Core\CoreProject-main\obj\Debug\net8.0\staticwebassets\msbuild.buildTransitive.firstProject.props
@@ -166,3 +163,26 @@ C:\Lea\Core\CoreProject\obj\Debug\net8.0\refint\firstProject.dll
 C:\Lea\Core\CoreProject\obj\Debug\net8.0\firstProject.pdb
 C:\Lea\Core\CoreProject\obj\Debug\net8.0\firstProject.genruntimeconfig.cache
 C:\Lea\Core\CoreProject\obj\Debug\net8.0\ref\firstProject.dll
+Z:\B\ליבשיץ לאה\Core\CoreProject-main\bin\Debug\net8.0\Data\users.json
+Z:\B\ליבשיץ לאה\Core\CoreProject-main\bin\Debug\net8.0\Data\usersWithNormalPassword.json
+Z:\B\ליבשיץ לאה\Core\CoreProject-main\bin\Debug\net8.0\firstProject.staticwebassets.runtime.json
+Z:\B\ליבשיץ לאה\Core\CoreProject-main\bin\Debug\net8.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+Z:\B\ליבשיץ לאה\Core\CoreProject-main\bin\Debug\net8.0\Microsoft.AspNetCore.OpenApi.dll
+Z:\B\ליבשיץ לאה\Core\CoreProject-main\bin\Debug\net8.0\Microsoft.Extensions.DependencyInjection.dll
+Z:\B\ליבשיץ לאה\Core\CoreProject-main\bin\Debug\net8.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+Z:\B\ליבשיץ לאה\Core\CoreProject-main\bin\Debug\net8.0\Microsoft.Extensions.Logging.dll
+Z:\B\ליבשיץ לאה\Core\CoreProject-main\bin\Debug\net8.0\Microsoft.Extensions.Logging.Abstractions.dll
+Z:\B\ליבשיץ לאה\Core\CoreProject-main\bin\Debug\net8.0\Microsoft.Extensions.Options.dll
+Z:\B\ליבשיץ לאה\Core\CoreProject-main\bin\Debug\net8.0\Microsoft.Extensions.Primitives.dll
+Z:\B\ליבשיץ לאה\Core\CoreProject-main\bin\Debug\net8.0\Microsoft.IdentityModel.Abstractions.dll
+Z:\B\ליבשיץ לאה\Core\CoreProject-main\bin\Debug\net8.0\Microsoft.IdentityModel.JsonWebTokens.dll
+Z:\B\ליבשיץ לאה\Core\CoreProject-main\bin\Debug\net8.0\Microsoft.IdentityModel.Logging.dll
+Z:\B\ליבשיץ לאה\Core\CoreProject-main\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.dll
+Z:\B\ליבשיץ לאה\Core\CoreProject-main\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+Z:\B\ליבשיץ לאה\Core\CoreProject-main\bin\Debug\net8.0\Microsoft.IdentityModel.Tokens.dll
+Z:\B\ליבשיץ לאה\Core\CoreProject-main\bin\Debug\net8.0\Scalar.AspNetCore.dll
+Z:\B\ליבשיץ לאה\Core\CoreProject-main\bin\Debug\net8.0\Serilog.dll
+Z:\B\ליבשיץ לאה\Core\CoreProject-main\bin\Debug\net8.0\Serilog.Extensions.Logging.dll
+Z:\B\ליבשיץ לאה\Core\CoreProject-main\bin\Debug\net8.0\Serilog.Sinks.File.dll
+Z:\B\ליבשיץ לאה\Core\CoreProject-main\bin\Debug\net8.0\System.Diagnostics.DiagnosticSource.dll
+Z:\B\ליבשיץ לאה\Core\CoreProject-main\bin\Debug\net8.0\System.IdentityModel.Tokens.Jwt.dll

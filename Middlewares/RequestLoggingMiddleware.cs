@@ -19,11 +19,11 @@ public class RequestLoggingMiddleware
         stopwatch.Stop();
         string userName;
     var token = context.Request.Headers["Authorization"].FirstOrDefault()?.Split(" ")[1];
-    System.Console.WriteLine(token);
+    // System.Console.WriteLine(token);
         if (token== null)        
             userName="Anonymous";
         else{
-            userName = UserTokenService.GetUserFromToken(token)?.UserNAme;
+            userName = UserTokenService.GetUserFromToken(token)?.userName;
             if (userName == null) userName = "Anonymous";
         }
         var logInfo = new

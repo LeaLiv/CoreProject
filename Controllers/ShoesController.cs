@@ -26,9 +26,10 @@ namespace firstProject.Controllers
             System.Console.WriteLine("GetAll called");
             string token = Request.Headers["Authorization"].ToString();
             User loggedUser = UserTokenService.GetUserFromToken(token);
-            if (loggedUser.Role== "admin")
+            
+            if (loggedUser.Role== "admin") 
                 return ShoesService.GetAll();
-            System.Console.WriteLine(loggedUser.Name);
+            // System.Console.WriteLine(loggedUser.Name);
             return ShoesService.GetAll().Where(s => s.UserId == loggedUser.Id).ToList();
         }
 
@@ -61,18 +62,22 @@ namespace firstProject.Controllers
 
 
         [HttpPut("{code}")]
+        [Authorize(Policy="user")]
         public IActionResult Update(int code, Shoes newShoes)
         {
             // Console.WriteLine("in start Put method");
-            string token = Request.Headers["Authorization"].ToString();
+            
+            string token = Request.Headers["Authorization"].ToString();           
             User loggedUser = UserTokenService.GetUserFromToken(token);
+            // if(newShoes.UserId!=loggedUser.UserId)
+            //     return Forbid();
             if (code != newShoes.Code)
             {
                 //Console.WriteLine(@"code != newShoes.Code code: {code} newShoes: {newShoes}");
                 return BadRequest();
 
             }
-            if(loggedUser.Role!= "admin" && loggedUser.Id!= newShoes.UserId)
+            if(!(loggedUser.Role== "admin" || loggedUser.Id== newShoes.UserId))
             {
                 return Forbid();
             }

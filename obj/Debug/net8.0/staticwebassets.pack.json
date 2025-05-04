@@ -17,8 +17,16 @@
       "PackagePath": "staticwebassets\\js\\site.js"
     },
     {
+      "Id": "C:\\Lea\\Core\\CoreProject\\wwwroot\\js\\users.js",
+      "PackagePath": "staticwebassets\\js\\users.js"
+    },
+    {
       "Id": "C:\\Lea\\Core\\CoreProject\\wwwroot\\show.html",
       "PackagePath": "staticwebassets\\show.html"
+    },
+    {
+      "Id": "C:\\Lea\\Core\\CoreProject\\wwwroot\\users.html",
+      "PackagePath": "staticwebassets\\users.html"
     },
     {
       "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.build.firstProject.props",

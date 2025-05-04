@@ -82,9 +82,9 @@ namespace firstProject.Controllers
         public IActionResult Login([FromBody] LoginRequest user)
         {
             // System.Console.WriteLine("in Login method called");
-            User RequestUser=UserService.GetByUserName(user.UserName);           
+            User RequestUser=UserService.GetByuserName(user.userName);           
             var dt = DateTime.Now;
-            if (RequestUser==null || !PasswordService.VerifyPassword(user.Password,RequestUser.Password ) || RequestUser.UserNAme!=user.UserName)
+            if (RequestUser==null || !PasswordService.VerifyPassword(user.Password,RequestUser.Password ) || RequestUser.userName!=user.userName)
                 return Unauthorized();
             var claims = new List<Claim>
             {

@@ -3,14 +3,14 @@
         "Code": 7,
         "Size": 40,
         "Company": "Puma",
-        "Color": "#956f7e",
+        "Color": "#df81a5",
         "UserId": 1
     },
     {
         "Code": 8,
         "Size": 40,
         "Company": "Reebok",
-        "Color": "#b9dacb",
+        "Color": "#51d298",
         "UserId": 2
     },
     {
@@ -59,7 +59,7 @@
         "Code": 23,
         "Size": 20,
         "Company": "Adidas",
-        "Color": "#1fc73b",
+        "Color": "#4edf69",
         "UserId": 2
     },
     {
@@ -152,5 +152,26 @@
         "Company": "Adidas",
         "Color": "#1f8dd1",
         "UserId": 6
+    },
+    {
+        "Code": 37,
+        "Size": 32,
+        "Company": "Nike",
+        "Color": "#1521d1",
+        "UserId": 4
+    },
+    {
+        "Code": 38,
+        "Size": 31,
+        "Company": "Adidas",
+        "Color": "#df2020",
+        "UserId": 2
+    },
+    {
+        "Code": 39,
+        "Size": 21,
+        "Company": "Puma",
+        "Color": "#2c9ac9",
+        "UserId": 9
     }
 ]
