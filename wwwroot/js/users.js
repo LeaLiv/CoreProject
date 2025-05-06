@@ -4,7 +4,8 @@ let token = '';
 
 function getUsers() {
     token = localStorage.getItem("token");
-    
+    const addUserForm=document.getElementById('add-user-form');
+    addUserForm.style.display='none';
     if (!token) {
         alert("You must log in first");
         window.location.href = "index.html";
@@ -12,10 +13,10 @@ function getUsers() {
     }
     const payload = JSON.parse(atob(token.split('.')[1]));
     const role=payload["type"]
-    if(role!="admin"){
-        alert("You are not authorized to this page. You must be an admin to access this page. Please log in again.");
-        window.location.href = "show.html";
-    }
+    // if(role!="admin"){
+    //     alert("You are not authorized to this page. You must be an admin to access this page. Please log in again.");
+    //     window.location.href = "show.html";
+    // }
     fetch(uri, {
         method: 'GET',
         headers: {
@@ -170,3 +171,6 @@ const logout = () => {
     localStorage.removeItem("token");
     window.location.href = "index.html";
 };
+document.addEventListener("DOMContentLoaded", function() {
+    
+  });

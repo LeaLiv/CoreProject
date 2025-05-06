@@ -19,9 +19,21 @@ namespace firstProject.Controllers
             UserService = userService;
         }
 
+        // [HttpGet]
+        // [Authorize(Policy="admin")]
+        // public ActionResult<List<User>> GetAll() => UserService.GetAll();
         [HttpGet]
-        [Authorize(Policy="admin")]
-        public ActionResult<List<User>> GetAll() => UserService.GetAll();
+        [Authorize(Policy = "user")]
+        public ActionResult<List<User>> GetAll() {
+            System.Console.WriteLine("GetAll called");
+            string token = Request.Headers["Authorization"].ToString();
+            User loggedUser = UserTokenService.GetUserFromToken(token);
+            
+            if (loggedUser.Role== "admin") 
+                return UserService.GetAll();
+            // System.Console.WriteLine(loggedUser.Name);
+            return UserService.GetAll().Where(u=>u.Id==loggedUser.Id).ToList();
+        }
 
         [HttpGet("{id}")]
         [Authorize(Policy="user")]

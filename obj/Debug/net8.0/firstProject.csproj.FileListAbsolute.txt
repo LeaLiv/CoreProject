@@ -186,3 +186,6 @@ Z:\B\ליבשיץ לאה\Core\CoreProject-main\bin\Debug\net8.0\Serilog.Extensio
 Z:\B\ליבשיץ לאה\Core\CoreProject-main\bin\Debug\net8.0\Serilog.Sinks.File.dll
 Z:\B\ליבשיץ לאה\Core\CoreProject-main\bin\Debug\net8.0\System.Diagnostics.DiagnosticSource.dll
 Z:\B\ליבשיץ לאה\Core\CoreProject-main\bin\Debug\net8.0\System.IdentityModel.Tokens.Jwt.dll
+Z:\B\ליבשיץ לאה\Core\CoreProject-main\bin\Debug\net8.0\firstProject.staticwebassets.endpoints.json
+Z:\B\ליבשיץ לאה\Core\CoreProject-main\obj\Debug\net8.0\staticwebassets.build.endpoints.json
+Z:\B\ליבשיץ לאה\Core\CoreProject-main\obj\Debug\net8.0\staticwebassets\msbuild.firstProject.Microsoft.AspNetCore.StaticWebAssetEndpoints.props

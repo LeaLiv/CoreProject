@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "7clIfki0LTCPXqD8x3Rn9uPVlGGYtiFrKZD6OrlIvq0=",
+  "Hash": "X9dwqEnslBw5547Au3Nf5D6qH/X9kQeTIGUdkUaAAP4=",
   "Source": "firstProject",
   "BasePath": "_content/firstProject",
   "Mode": "Default",
@@ -10,17 +10,17 @@
     {
       "Name": "firstProject\\wwwroot",
       "Source": "firstProject",
-      "ContentRoot": "C:\\Lea\\Core\\CoreProject\\wwwroot\\",
+      "ContentRoot": "Z:\\B\\ליבשיץ לאה\\Core\\CoreProject-main\\wwwroot\\",
       "BasePath": "_content/firstProject",
       "Pattern": "**"
     }
   ],
   "Assets": [
     {
-      "Identity": "C:\\Lea\\Core\\CoreProject\\wwwroot\\css\\site.css",
+      "Identity": "Z:\\B\\ליבשיץ לאה\\Core\\CoreProject-main\\wwwroot\\css\\site.css",
       "SourceId": "firstProject",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Lea\\Core\\CoreProject\\wwwroot\\",
+      "ContentRoot": "Z:\\B\\ליבשיץ לאה\\Core\\CoreProject-main\\wwwroot\\",
       "BasePath": "_content/firstProject",
       "RelativePath": "css/site#[.{fingerprint}]?.css",
       "AssetKind": "All",
@@ -38,10 +38,10 @@
       "OriginalItemSpec": "wwwroot\\css\\site.css"
     },
     {
-      "Identity": "C:\\Lea\\Core\\CoreProject\\wwwroot\\index.html",
+      "Identity": "Z:\\B\\ליבשיץ לאה\\Core\\CoreProject-main\\wwwroot\\index.html",
       "SourceId": "firstProject",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Lea\\Core\\CoreProject\\wwwroot\\",
+      "ContentRoot": "Z:\\B\\ליבשיץ לאה\\Core\\CoreProject-main\\wwwroot\\",
       "BasePath": "_content/firstProject",
       "RelativePath": "index#[.{fingerprint}]?.html",
       "AssetKind": "All",
@@ -59,10 +59,10 @@
       "OriginalItemSpec": "wwwroot\\index.html"
     },
     {
-      "Identity": "C:\\Lea\\Core\\CoreProject\\wwwroot\\js\\login.js",
+      "Identity": "Z:\\B\\ליבשיץ לאה\\Core\\CoreProject-main\\wwwroot\\js\\login.js",
       "SourceId": "firstProject",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Lea\\Core\\CoreProject\\wwwroot\\",
+      "ContentRoot": "Z:\\B\\ליבשיץ לאה\\Core\\CoreProject-main\\wwwroot\\",
       "BasePath": "_content/firstProject",
       "RelativePath": "js/login#[.{fingerprint}]?.js",
       "AssetKind": "All",
@@ -80,10 +80,10 @@
       "OriginalItemSpec": "wwwroot\\js\\login.js"
     },
     {
-      "Identity": "C:\\Lea\\Core\\CoreProject\\wwwroot\\js\\site.js",
+      "Identity": "Z:\\B\\ליבשיץ לאה\\Core\\CoreProject-main\\wwwroot\\js\\site.js",
       "SourceId": "firstProject",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Lea\\Core\\CoreProject\\wwwroot\\",
+      "ContentRoot": "Z:\\B\\ליבשיץ לאה\\Core\\CoreProject-main\\wwwroot\\",
       "BasePath": "_content/firstProject",
       "RelativePath": "js/site#[.{fingerprint}]?.js",
       "AssetKind": "All",
@@ -101,10 +101,10 @@
       "OriginalItemSpec": "wwwroot\\js\\site.js"
     },
     {
-      "Identity": "C:\\Lea\\Core\\CoreProject\\wwwroot\\js\\users.js",
+      "Identity": "Z:\\B\\ליבשיץ לאה\\Core\\CoreProject-main\\wwwroot\\js\\users.js",
       "SourceId": "firstProject",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Lea\\Core\\CoreProject\\wwwroot\\",
+      "ContentRoot": "Z:\\B\\ליבשיץ לאה\\Core\\CoreProject-main\\wwwroot\\",
       "BasePath": "_content/firstProject",
       "RelativePath": "js/users#[.{fingerprint}]?.js",
       "AssetKind": "All",
@@ -115,17 +115,17 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "osu776rdqq",
-      "Integrity": "qMZ6VQcT2YhHVIOMSYktIi5ygsxqHg4Dq31R2t8aRi8=",
+      "Fingerprint": "jnmo1aq23z",
+      "Integrity": "UU7H2vrCb939HRj2U7ykq+nKTUowLCuWk5UdVeWLsnc=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\js\\users.js"
     },
     {
-      "Identity": "C:\\Lea\\Core\\CoreProject\\wwwroot\\show.html",
+      "Identity": "Z:\\B\\ליבשיץ לאה\\Core\\CoreProject-main\\wwwroot\\show.html",
       "SourceId": "firstProject",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Lea\\Core\\CoreProject\\wwwroot\\",
+      "ContentRoot": "Z:\\B\\ליבשיץ לאה\\Core\\CoreProject-main\\wwwroot\\",
       "BasePath": "_content/firstProject",
       "RelativePath": "show#[.{fingerprint}]?.html",
       "AssetKind": "All",
@@ -143,10 +143,10 @@
       "OriginalItemSpec": "wwwroot\\show.html"
     },
     {
-      "Identity": "C:\\Lea\\Core\\CoreProject\\wwwroot\\users.html",
+      "Identity": "Z:\\B\\ליבשיץ לאה\\Core\\CoreProject-main\\wwwroot\\users.html",
       "SourceId": "firstProject",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Lea\\Core\\CoreProject\\wwwroot\\",
+      "ContentRoot": "Z:\\B\\ליבשיץ לאה\\Core\\CoreProject-main\\wwwroot\\",
       "BasePath": "_content/firstProject",
       "RelativePath": "users#[.{fingerprint}]?.html",
       "AssetKind": "All",
@@ -157,8 +157,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "4usjj7v9rw",
-      "Integrity": "vLedBeEdzgIR1VCUlx7hTw1I12BNt9TjWirqWGlrEtE=",
+      "Fingerprint": "50yeqaoc3q",
+      "Integrity": "WxoRy98vg3ikYnytZ3b9SW9Ctnr37x8hpUiaUfgVkbY=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\users.html"
@@ -167,7 +167,7 @@
   "Endpoints": [
     {
       "Route": "css/site.css",
-      "AssetFile": "C:\\Lea\\Core\\CoreProject\\wwwroot\\css\\site.css",
+      "AssetFile": "Z:\\B\\ליבשיץ לאה\\Core\\CoreProject-main\\wwwroot\\css\\site.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -188,7 +188,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 04 May 2025 12:58:37 GMT"
+          "Value": "Sun, 04 May 2025 17:35:37 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -204,7 +204,7 @@
     },
     {
       "Route": "css/site.rifqkqk42m.css",
-      "AssetFile": "C:\\Lea\\Core\\CoreProject\\wwwroot\\css\\site.css",
+      "AssetFile": "Z:\\B\\ליבשיץ לאה\\Core\\CoreProject-main\\wwwroot\\css\\site.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -225,7 +225,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 04 May 2025 12:58:37 GMT"
+          "Value": "Sun, 04 May 2025 17:35:37 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -249,7 +249,7 @@
     },
     {
       "Route": "index.9w6txqev9e.html",
-      "AssetFile": "C:\\Lea\\Core\\CoreProject\\wwwroot\\index.html",
+      "AssetFile": "Z:\\B\\ליבשיץ לאה\\Core\\CoreProject-main\\wwwroot\\index.html",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -270,7 +270,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 04 May 2025 14:40:15 GMT"
+          "Value": "Sun, 04 May 2025 17:35:37 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -294,7 +294,7 @@
     },
     {
       "Route": "index.html",
-      "AssetFile": "C:\\Lea\\Core\\CoreProject\\wwwroot\\index.html",
+      "AssetFile": "Z:\\B\\ליבשיץ לאה\\Core\\CoreProject-main\\wwwroot\\index.html",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -315,7 +315,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 04 May 2025 14:40:15 GMT"
+          "Value": "Sun, 04 May 2025 17:35:37 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -331,7 +331,7 @@
     },
     {
       "Route": "js/login.agkwaor8lf.js",
-      "AssetFile": "C:\\Lea\\Core\\CoreProject\\wwwroot\\js\\login.js",
+      "AssetFile": "Z:\\B\\ליבשיץ לאה\\Core\\CoreProject-main\\wwwroot\\js\\login.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -352,7 +352,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 04 May 2025 13:34:26 GMT"
+          "Value": "Sun, 04 May 2025 17:35:38 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -376,7 +376,7 @@
     },
     {
       "Route": "js/login.js",
-      "AssetFile": "C:\\Lea\\Core\\CoreProject\\wwwroot\\js\\login.js",
+      "AssetFile": "Z:\\B\\ליבשיץ לאה\\Core\\CoreProject-main\\wwwroot\\js\\login.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -397,7 +397,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 04 May 2025 13:34:26 GMT"
+          "Value": "Sun, 04 May 2025 17:35:38 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -413,7 +413,7 @@
     },
     {
       "Route": "js/site.js",
-      "AssetFile": "C:\\Lea\\Core\\CoreProject\\wwwroot\\js\\site.js",
+      "AssetFile": "Z:\\B\\ליבשיץ לאה\\Core\\CoreProject-main\\wwwroot\\js\\site.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -434,7 +434,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 04 May 2025 14:44:44 GMT"
+          "Value": "Sun, 04 May 2025 17:35:38 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -450,7 +450,7 @@
     },
     {
       "Route": "js/site.m9na5l63jh.js",
-      "AssetFile": "C:\\Lea\\Core\\CoreProject\\wwwroot\\js\\site.js",
+      "AssetFile": "Z:\\B\\ליבשיץ לאה\\Core\\CoreProject-main\\wwwroot\\js\\site.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -471,7 +471,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 04 May 2025 14:44:44 GMT"
+          "Value": "Sun, 04 May 2025 17:35:38 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -494,8 +494,8 @@
       ]
     },
     {
-      "Route": "js/users.js",
-      "AssetFile": "C:\\Lea\\Core\\CoreProject\\wwwroot\\js\\users.js",
+      "Route": "js/users.jnmo1aq23z.js",
+      "AssetFile": "Z:\\B\\ליבשיץ לאה\\Core\\CoreProject-main\\wwwroot\\js\\users.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -504,7 +504,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "5389"
+          "Value": "5520"
         },
         {
           "Name": "Content-Type",
@@ -512,48 +512,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"qMZ6VQcT2YhHVIOMSYktIi5ygsxqHg4Dq31R2t8aRi8=\""
+          "Value": "\"UU7H2vrCb939HRj2U7ykq+nKTUowLCuWk5UdVeWLsnc=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 04 May 2025 13:42:52 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "no-cache"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-qMZ6VQcT2YhHVIOMSYktIi5ygsxqHg4Dq31R2t8aRi8="
-        }
-      ]
-    },
-    {
-      "Route": "js/users.osu776rdqq.js",
-      "AssetFile": "C:\\Lea\\Core\\CoreProject\\wwwroot\\js\\users.js",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "5389"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/javascript"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"qMZ6VQcT2YhHVIOMSYktIi5ygsxqHg4Dq31R2t8aRi8=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Sun, 04 May 2025 13:42:52 GMT"
+          "Value": "Tue, 06 May 2025 08:22:41 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -563,7 +526,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "osu776rdqq"
+          "Value": "jnmo1aq23z"
         },
         {
           "Name": "label",
@@ -571,13 +534,50 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-qMZ6VQcT2YhHVIOMSYktIi5ygsxqHg4Dq31R2t8aRi8="
+          "Value": "sha256-UU7H2vrCb939HRj2U7ykq+nKTUowLCuWk5UdVeWLsnc="
+        }
+      ]
+    },
+    {
+      "Route": "js/users.js",
+      "AssetFile": "Z:\\B\\ליבשיץ לאה\\Core\\CoreProject-main\\wwwroot\\js\\users.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "5520"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"UU7H2vrCb939HRj2U7ykq+nKTUowLCuWk5UdVeWLsnc=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 06 May 2025 08:22:41 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-UU7H2vrCb939HRj2U7ykq+nKTUowLCuWk5UdVeWLsnc="
         }
       ]
     },
     {
       "Route": "show.html",
-      "AssetFile": "C:\\Lea\\Core\\CoreProject\\wwwroot\\show.html",
+      "AssetFile": "Z:\\B\\ליבשיץ לאה\\Core\\CoreProject-main\\wwwroot\\show.html",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -598,7 +598,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 04 May 2025 14:42:54 GMT"
+          "Value": "Sun, 04 May 2025 17:35:37 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -614,7 +614,7 @@
     },
     {
       "Route": "show.mc8kes3fqk.html",
-      "AssetFile": "C:\\Lea\\Core\\CoreProject\\wwwroot\\show.html",
+      "AssetFile": "Z:\\B\\ליבשיץ לאה\\Core\\CoreProject-main\\wwwroot\\show.html",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -635,7 +635,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 04 May 2025 14:42:54 GMT"
+          "Value": "Sun, 04 May 2025 17:35:37 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -658,8 +658,8 @@
       ]
     },
     {
-      "Route": "users.4usjj7v9rw.html",
-      "AssetFile": "C:\\Lea\\Core\\CoreProject\\wwwroot\\users.html",
+      "Route": "users.50yeqaoc3q.html",
+      "AssetFile": "Z:\\B\\ליבשיץ לאה\\Core\\CoreProject-main\\wwwroot\\users.html",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -668,7 +668,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "2004"
+          "Value": "1939"
         },
         {
           "Name": "Content-Type",
@@ -676,11 +676,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"vLedBeEdzgIR1VCUlx7hTw1I12BNt9TjWirqWGlrEtE=\""
+          "Value": "\"WxoRy98vg3ikYnytZ3b9SW9Ctnr37x8hpUiaUfgVkbY=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 04 May 2025 14:41:48 GMT"
+          "Value": "Sun, 04 May 2025 17:35:37 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -690,7 +690,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "4usjj7v9rw"
+          "Value": "50yeqaoc3q"
         },
         {
           "Name": "label",
@@ -698,13 +698,13 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-vLedBeEdzgIR1VCUlx7hTw1I12BNt9TjWirqWGlrEtE="
+          "Value": "sha256-WxoRy98vg3ikYnytZ3b9SW9Ctnr37x8hpUiaUfgVkbY="
         }
       ]
     },
     {
       "Route": "users.html",
-      "AssetFile": "C:\\Lea\\Core\\CoreProject\\wwwroot\\users.html",
+      "AssetFile": "Z:\\B\\ליבשיץ לאה\\Core\\CoreProject-main\\wwwroot\\users.html",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -713,7 +713,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "2004"
+          "Value": "1939"
         },
         {
           "Name": "Content-Type",
@@ -721,11 +721,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"vLedBeEdzgIR1VCUlx7hTw1I12BNt9TjWirqWGlrEtE=\""
+          "Value": "\"WxoRy98vg3ikYnytZ3b9SW9Ctnr37x8hpUiaUfgVkbY=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 04 May 2025 14:41:48 GMT"
+          "Value": "Sun, 04 May 2025 17:35:37 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -735,7 +735,7 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-vLedBeEdzgIR1VCUlx7hTw1I12BNt9TjWirqWGlrEtE="
+          "Value": "sha256-WxoRy98vg3ikYnytZ3b9SW9Ctnr37x8hpUiaUfgVkbY="
         }
       ]
     }

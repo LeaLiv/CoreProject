@@ -1,0 +1,15 @@
+2025-05-06 11:17:14.308 +03:00 [WRN] The ASP.NET Core developer certificate is not trusted. For information about trusting the ASP.NET Core developer certificate, see https://aka.ms/aspnet/https-trust-dev-cert.
+2025-05-06 11:17:27.737 +03:00 [INF] Request Info: {"Timestamp":"2025-05-06T08:17:27.7369243Z","Controller":null,"Action":null,"User":"Anonymous","ExecutionTimeMs":0}
+2025-05-06 11:17:52.735 +03:00 [INF] Request Info: {"Timestamp":"2025-05-06T08:17:52.7352756Z","Controller":"Users","Action":"Login","User":"Anonymous","ExecutionTimeMs":84}
+2025-05-06 11:17:52.809 +03:00 [INF] Request Info: {"Timestamp":"2025-05-06T08:17:52.8094208Z","Controller":"Shoes","Action":"GetAll","User":"johndoe","ExecutionTimeMs":15}
+2025-05-06 11:18:06.033 +03:00 [INF] Request Info: {"Timestamp":"2025-05-06T08:18:06.0330444Z","Controller":"Users","Action":"GetAll","User":"johndoe","ExecutionTimeMs":1}
+2025-05-06 11:21:33.518 +03:00 [WRN] The ASP.NET Core developer certificate is not trusted. For information about trusting the ASP.NET Core developer certificate, see https://aka.ms/aspnet/https-trust-dev-cert.
+2025-05-06 11:21:59.264 +03:00 [INF] Request Info: {"Timestamp":"2025-05-06T08:21:59.2636285Z","Controller":"Users","Action":"Login","User":"Anonymous","ExecutionTimeMs":99}
+2025-05-06 11:21:59.362 +03:00 [INF] Request Info: {"Timestamp":"2025-05-06T08:21:59.3628098Z","Controller":"Shoes","Action":"GetAll","User":"janesmith","ExecutionTimeMs":23}
+2025-05-06 11:22:08.294 +03:00 [INF] Request Info: {"Timestamp":"2025-05-06T08:22:08.2940132Z","Controller":"Shoes","Action":"GetAll","User":"janesmith","ExecutionTimeMs":2}
+2025-05-06 11:22:19.723 +03:00 [INF] Request Info: {"Timestamp":"2025-05-06T08:22:19.7235328Z","Controller":"Shoes","Action":"GetAll","User":"janesmith","ExecutionTimeMs":0}
+2025-05-06 11:22:23.587 +03:00 [INF] Request Info: {"Timestamp":"2025-05-06T08:22:23.5873447Z","Controller":"Users","Action":"Login","User":"Anonymous","ExecutionTimeMs":2}
+2025-05-06 11:22:23.622 +03:00 [INF] Request Info: {"Timestamp":"2025-05-06T08:22:23.6225252Z","Controller":"Shoes","Action":"GetAll","User":"janesmith","ExecutionTimeMs":0}
+2025-05-06 11:24:06.745 +03:00 [WRN] The ASP.NET Core developer certificate is not trusted. For information about trusting the ASP.NET Core developer certificate, see https://aka.ms/aspnet/https-trust-dev-cert.
+2025-05-06 11:24:13.352 +03:00 [INF] Request Info: {"Timestamp":"2025-05-06T08:24:13.3517237Z","Controller":"Users","Action":"GetAll","User":"janesmith","ExecutionTimeMs":20}
+2025-05-06 11:26:38.458 +03:00 [INF] Request Info: {"Timestamp":"2025-05-06T08:26:38.4580791Z","Controller":"Users","Action":"GetAll","User":"janesmith","ExecutionTimeMs":0}
