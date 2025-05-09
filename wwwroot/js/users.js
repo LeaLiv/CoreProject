@@ -1,9 +1,9 @@
 const uri = '/users';
 let users = [];
 let token = '';
-let payload=''
+let payload = ''
 function getUsers() {
-    
+
     fetch(uri, {
         method: 'GET',
         headers: {
@@ -122,7 +122,7 @@ function _displayUsers(data) {
     const button = document.createElement('button');
     data.forEach(user => {
         console.log(data);
-        
+
         let editButton = button.cloneNode(false);
 
         editButton.innerText = 'Edit';
@@ -145,7 +145,9 @@ function _displayUsers(data) {
         let deleteButton = document.createElement('button');
         deleteButton.innerText = 'Delete';
         deleteButton.setAttribute('onclick', `deleteUser(${user.id})`);
-        deleteButton.className='hidden-from-user'
+        const role = payload["type"];
+        if (role != "admin")
+            deleteButton.className = 'hidden-from-user'
         td5.appendChild(deleteButton);
 
         let td6 = tr.insertCell(5);
@@ -159,19 +161,19 @@ const logout = () => {
     localStorage.removeItem("token");
     window.location.href = "index.html";
 };
-document.addEventListener("DOMContentLoaded", function() {
+document.addEventListener("DOMContentLoaded", function () {
     token = localStorage.getItem("token");
     if (!token) {
         alert("You must log in first");
         window.location.href = "index.html";
         return;
-    }   
-    const payload = JSON.parse(atob(token.split('.')[1]));
-    const role=payload["type"];
-    if(role!="admin"){
-        const addUserForm=document.getElementById('add-user-form');
-        addUserForm.style.display='none';
+    }
+    payload = JSON.parse(atob(token.split('.')[1]));
+    const role = payload["type"];
+    if (role != "admin") {
+        const addUserForm = document.getElementById('add-user-form');
+        addUserForm.style.display = 'none';
     }
     getUsers();
 
-  });
+});

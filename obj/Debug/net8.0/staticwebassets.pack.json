@@ -5,6 +5,14 @@
       "PackagePath": "staticwebassets\\css\\site.css"
     },
     {
+      "Id": "C:\\Lea\\Core\\CoreProject\\wwwroot\\icons\\favicon.ico",
+      "PackagePath": "staticwebassets\\icons\\favicon.ico"
+    },
+    {
+      "Id": "C:\\Lea\\Core\\CoreProject\\wwwroot\\icons\\trainers.png",
+      "PackagePath": "staticwebassets\\icons\\trainers.png"
+    },
+    {
       "Id": "C:\\Lea\\Core\\CoreProject\\wwwroot\\index.html",
       "PackagePath": "staticwebassets\\index.html"
     },

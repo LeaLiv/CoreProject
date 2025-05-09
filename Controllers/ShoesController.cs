@@ -26,8 +26,8 @@ namespace firstProject.Controllers
             System.Console.WriteLine("GetAll called");
             string token = Request.Headers["Authorization"].ToString();
             User loggedUser = UserTokenService.GetUserFromToken(token);
-            System.Console.WriteLine(token);
-            System.Console.WriteLine(loggedUser);
+            // System.Console.WriteLine(token);
+            // System.Console.WriteLine(loggedUser);
             if (loggedUser.Role== "admin") 
                 return ShoesService.GetAll();
             // System.Console.WriteLine(loggedUser.Name);

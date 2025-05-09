@@ -1,0 +1,331 @@
+2025-05-09 09:27:41.647 +03:00 [WRN] The ASP.NET Core developer certificate is not trusted. For information about trusting the ASP.NET Core developer certificate, see https://aka.ms/aspnet/https-trust-dev-cert.
+2025-05-09 09:27:41.724 +03:00 [ERR] Hosting failed to start
+System.IO.IOException: Failed to bind to address https://127.0.0.1:7116: address already in use.
+ ---> Microsoft.AspNetCore.Connections.AddressInUseException: Only one usage of each socket address (protocol/network address/port) is normally permitted.
+ ---> System.Net.Sockets.SocketException (10048): Only one usage of each socket address (protocol/network address/port) is normally permitted.
+   at System.Net.Sockets.Socket.UpdateStatusAfterSocketErrorAndThrowException(SocketError error, Boolean disconnectOnFailure, String callerName)
+   at System.Net.Sockets.Socket.DoBind(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   at System.Net.Sockets.Socket.Bind(EndPoint localEP)
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets.SocketTransportOptions.CreateDefaultBoundListenSocket(EndPoint endpoint)
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets.SocketConnectionListener.Bind()
+   --- End of inner exception stack trace ---
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets.SocketConnectionListener.Bind()
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets.SocketTransportFactory.BindAsync(EndPoint endpoint, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Infrastructure.TransportManager.BindAsync(EndPoint endPoint, ConnectionDelegate connectionDelegate, EndpointConfig endpointConfig, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServerImpl.<>c__DisplayClass28_0`1.<<StartAsync>g__OnBind|0>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.AddressBinder.BindEndpointAsync(ListenOptions endpoint, AddressBindContext context, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.AddressBinder.BindEndpointAsync(ListenOptions endpoint, AddressBindContext context, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.LocalhostListenOptions.BindAsync(AddressBindContext context, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.AddressBinder.AddressesStrategy.BindAsync(AddressBindContext context, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.AddressBinder.BindAsync(ListenOptions[] listenOptions, AddressBindContext context, Func`2 useHttps, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServerImpl.BindAsync(CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServerImpl.StartAsync[TContext](IHttpApplication`1 application, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Hosting.GenericWebHostService.StartAsync(CancellationToken cancellationToken)
+   at Microsoft.Extensions.Hosting.Internal.Host.<StartAsync>b__15_1(IHostedService service, CancellationToken token)
+   at Microsoft.Extensions.Hosting.Internal.Host.ForeachService[T](IEnumerable`1 services, CancellationToken token, Boolean concurrent, Boolean abortOnFirstException, List`1 exceptions, Func`3 operation)
+2025-05-09 09:29:04.712 +03:00 [WRN] The ASP.NET Core developer certificate is not trusted. For information about trusting the ASP.NET Core developer certificate, see https://aka.ms/aspnet/https-trust-dev-cert.
+2025-05-09 09:29:08.713 +03:00 [INF] Request Info: {"Timestamp":"2025-05-09T06:29:08.7128755Z","Controller":"Users","Action":"GetAll","User":"leal","ExecutionTimeMs":24}
+2025-05-09 09:31:20.201 +03:00 [WRN] The ASP.NET Core developer certificate is not trusted. For information about trusting the ASP.NET Core developer certificate, see https://aka.ms/aspnet/https-trust-dev-cert.
+2025-05-09 09:31:22.864 +03:00 [INF] Request Info: {"Timestamp":"2025-05-09T06:31:22.8636548Z","Controller":"Users","Action":"GetAll","User":"leal","ExecutionTimeMs":26}
+2025-05-09 09:31:30.280 +03:00 [INF] Request Info: {"Timestamp":"2025-05-09T06:31:30.2807625Z","Controller":"Users","Action":"Login","User":"Anonymous","ExecutionTimeMs":25}
+2025-05-09 09:31:30.339 +03:00 [INF] Request Info: {"Timestamp":"2025-05-09T06:31:30.3398067Z","Controller":"Shoes","Action":"GetAll","User":"leal","ExecutionTimeMs":13}
+2025-05-09 09:31:32.331 +03:00 [INF] Request Info: {"Timestamp":"2025-05-09T06:31:32.3317083Z","Controller":"Users","Action":"GetAll","User":"leal","ExecutionTimeMs":1}
+2025-05-09 09:31:39.628 +03:00 [INF] Request Info: {"Timestamp":"2025-05-09T06:31:39.6282589Z","Controller":"Users","Action":"Post","User":"leal","ExecutionTimeMs":28}
+2025-05-09 09:31:39.633 +03:00 [INF] Request Info: {"Timestamp":"2025-05-09T06:31:39.6334664Z","Controller":"Users","Action":"GetAll","User":"leal","ExecutionTimeMs":1}
+2025-05-09 09:31:44.960 +03:00 [INF] Request Info: {"Timestamp":"2025-05-09T06:31:44.9604056Z","Controller":"Users","Action":"Login","User":"Anonymous","ExecutionTimeMs":1}
+2025-05-09 09:31:45.039 +03:00 [ERR] An unhandled exception has occurred while executing the request.
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at firstProject.Services.UserService.Get(Int32 id) in Z:\B\ליבשיץ לאה\Core\CoreProject-main\Services\UserService.cs:line 39
+   at firstProject.Services.UserTokenService.GetUserFromToken(String token) in Z:\B\ליבשיץ לאה\Core\CoreProject-main\Services\UserTokenService.cs:line 59
+   at firstProject.Controllers.ShoesController.GetAll() in Z:\B\ליבשיץ לאה\Core\CoreProject-main\Controllers\ShoesController.cs:line 28
+   at lambda_method6(Closure, Object, Object[])
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.SyncObjectResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeNextActionFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at CoreProject.Middlewares.RequestLoggingMiddleware.Invoke(HttpContext context) in Z:\B\ליבשיץ לאה\Core\CoreProject-main\Middlewares\RequestLoggingMiddleware.cs:line 18
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2025-05-09 09:32:59.647 +03:00 [INF] Request Info: {"Timestamp":"2025-05-09T06:32:59.6477561Z","Controller":"Users","Action":"Login","User":"Anonymous","ExecutionTimeMs":1}
+2025-05-09 09:32:59.692 +03:00 [INF] Request Info: {"Timestamp":"2025-05-09T06:32:59.6924473Z","Controller":"Shoes","Action":"GetAll","User":"leal","ExecutionTimeMs":1}
+2025-05-09 09:34:45.225 +03:00 [WRN] The ASP.NET Core developer certificate is not trusted. For information about trusting the ASP.NET Core developer certificate, see https://aka.ms/aspnet/https-trust-dev-cert.
+2025-05-09 09:34:53.173 +03:00 [INF] Request Info: {"Timestamp":"2025-05-09T06:34:53.1719977Z","Controller":"Users","Action":"Login","User":"Anonymous","ExecutionTimeMs":59}
+2025-05-09 09:34:53.309 +03:00 [INF] Request Info: {"Timestamp":"2025-05-09T06:34:53.3090675Z","Controller":"Shoes","Action":"GetAll","User":"leal","ExecutionTimeMs":28}
+2025-05-09 09:34:54.466 +03:00 [INF] Request Info: {"Timestamp":"2025-05-09T06:34:54.4664092Z","Controller":"Users","Action":"GetAll","User":"leal","ExecutionTimeMs":4}
+2025-05-09 09:35:01.264 +03:00 [INF] Request Info: {"Timestamp":"2025-05-09T06:35:01.2649817Z","Controller":"Users","Action":"Post","User":"leal","ExecutionTimeMs":29}
+2025-05-09 09:35:01.274 +03:00 [INF] Request Info: {"Timestamp":"2025-05-09T06:35:01.2747040Z","Controller":"Users","Action":"GetAll","User":"leal","ExecutionTimeMs":2}
+2025-05-09 09:35:13.233 +03:00 [INF] Request Info: {"Timestamp":"2025-05-09T06:35:13.2331180Z","Controller":"Users","Action":"Login","User":"Anonymous","ExecutionTimeMs":2}
+2025-05-09 09:35:13.313 +03:00 [ERR] An unhandled exception has occurred while executing the request.
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at firstProject.Services.UserService.Get(Int32 id) in Z:\B\ליבשיץ לאה\Core\CoreProject-main\Services\UserService.cs:line 39
+   at firstProject.Services.UserTokenService.GetUserFromToken(String token) in Z:\B\ליבשיץ לאה\Core\CoreProject-main\Services\UserTokenService.cs:line 61
+   at firstProject.Controllers.ShoesController.GetAll() in Z:\B\ליבשיץ לאה\Core\CoreProject-main\Controllers\ShoesController.cs:line 28
+   at lambda_method4(Closure, Object, Object[])
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.SyncObjectResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeNextActionFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at CoreProject.Middlewares.RequestLoggingMiddleware.Invoke(HttpContext context) in Z:\B\ליבשיץ לאה\Core\CoreProject-main\Middlewares\RequestLoggingMiddleware.cs:line 18
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2025-05-09 09:36:16.490 +03:00 [WRN] The ASP.NET Core developer certificate is not trusted. For information about trusting the ASP.NET Core developer certificate, see https://aka.ms/aspnet/https-trust-dev-cert.
+2025-05-09 09:36:25.259 +03:00 [INF] Request Info: {"Timestamp":"2025-05-09T06:36:25.2590417Z","Controller":"Users","Action":"Login","User":"Anonymous","ExecutionTimeMs":81}
+2025-05-09 09:36:25.416 +03:00 [INF] Request Info: {"Timestamp":"2025-05-09T06:36:25.4162093Z","Controller":"Shoes","Action":"GetAll","User":"leal","ExecutionTimeMs":30}
+2025-05-09 09:36:26.598 +03:00 [INF] Request Info: {"Timestamp":"2025-05-09T06:36:26.5986380Z","Controller":"Users","Action":"GetAll","User":"leal","ExecutionTimeMs":6}
+2025-05-09 09:36:42.065 +03:00 [INF] Request Info: {"Timestamp":"2025-05-09T06:36:42.0658584Z","Controller":"Users","Action":"Post","User":"leal","ExecutionTimeMs":17}
+2025-05-09 09:36:42.069 +03:00 [INF] Request Info: {"Timestamp":"2025-05-09T06:36:42.0699660Z","Controller":"Users","Action":"GetAll","User":"leal","ExecutionTimeMs":0}
+2025-05-09 09:37:29.578 +03:00 [INF] Request Info: {"Timestamp":"2025-05-09T06:37:29.5785025Z","Controller":"Users","Action":"Login","User":"Anonymous","ExecutionTimeMs":24}
+2025-05-09 09:37:36.136 +03:00 [INF] Request Info: {"Timestamp":"2025-05-09T06:37:36.1368330Z","Controller":"Users","Action":"Login","User":"Anonymous","ExecutionTimeMs":1}
+2025-05-09 09:37:59.536 +03:00 [INF] Request Info: {"Timestamp":"2025-05-09T06:37:59.5367010Z","Controller":"Users","Action":"Login","User":"Anonymous","ExecutionTimeMs":0}
+2025-05-09 09:38:19.875 +03:00 [INF] Request Info: {"Timestamp":"2025-05-09T06:38:19.8753585Z","Controller":"Users","Action":"Login","User":"Anonymous","ExecutionTimeMs":1}
+2025-05-09 09:38:19.967 +03:00 [INF] Request Info: {"Timestamp":"2025-05-09T06:38:19.9674916Z","Controller":"Shoes","Action":"GetAll","User":"charliedavis","ExecutionTimeMs":1}
+2025-05-09 09:38:35.502 +03:00 [INF] Request Info: {"Timestamp":"2025-05-09T06:38:35.5024873Z","Controller":"Users","Action":"GetAll","User":"charliedavis","ExecutionTimeMs":1}
+2025-05-09 09:38:57.108 +03:00 [INF] Request Info: {"Timestamp":"2025-05-09T06:38:57.1081229Z","Controller":"Users","Action":"Login","User":"Anonymous","ExecutionTimeMs":1}
+2025-05-09 09:38:57.233 +03:00 [ERR] An unhandled exception has occurred while executing the request.
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at firstProject.Services.UserService.Get(Int32 id) in Z:\B\ליבשיץ לאה\Core\CoreProject-main\Services\UserService.cs:line 39
+   at firstProject.Services.UserTokenService.GetUserFromToken(String token) in Z:\B\ליבשיץ לאה\Core\CoreProject-main\Services\UserTokenService.cs:line 61
+   at firstProject.Controllers.ShoesController.GetAll() in Z:\B\ליבשיץ לאה\Core\CoreProject-main\Controllers\ShoesController.cs:line 28
+   at lambda_method4(Closure, Object, Object[])
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.SyncObjectResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeNextActionFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at CoreProject.Middlewares.RequestLoggingMiddleware.Invoke(HttpContext context) in Z:\B\ליבשיץ לאה\Core\CoreProject-main\Middlewares\RequestLoggingMiddleware.cs:line 18
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2025-05-09 09:40:31.605 +03:00 [INF] Request Info: {"Timestamp":"2025-05-09T06:40:31.6058153Z","Controller":"Users","Action":"Login","User":"Anonymous","ExecutionTimeMs":0}
+2025-05-09 09:40:31.658 +03:00 [INF] Request Info: {"Timestamp":"2025-05-09T06:40:31.6587456Z","Controller":"Shoes","Action":"GetAll","User":"leal","ExecutionTimeMs":1}
+2025-05-09 09:40:34.932 +03:00 [INF] Request Info: {"Timestamp":"2025-05-09T06:40:34.9321956Z","Controller":"Users","Action":"GetAll","User":"leal","ExecutionTimeMs":1}
+2025-05-09 09:40:37.152 +03:00 [INF] Request Info: {"Timestamp":"2025-05-09T06:40:37.1523628Z","Controller":"Users","Action":"GetAll","User":"leal","ExecutionTimeMs":1}
+2025-05-09 09:40:37.610 +03:00 [INF] Request Info: {"Timestamp":"2025-05-09T06:40:37.6100984Z","Controller":"Users","Action":"GetAll","User":"leal","ExecutionTimeMs":1}
+2025-05-09 09:40:37.759 +03:00 [INF] Request Info: {"Timestamp":"2025-05-09T06:40:37.7596759Z","Controller":"Users","Action":"GetAll","User":"leal","ExecutionTimeMs":1}
+2025-05-09 09:40:37.891 +03:00 [INF] Request Info: {"Timestamp":"2025-05-09T06:40:37.8915214Z","Controller":"Users","Action":"GetAll","User":"leal","ExecutionTimeMs":1}
+2025-05-09 09:40:38.022 +03:00 [INF] Request Info: {"Timestamp":"2025-05-09T06:40:38.0222296Z","Controller":"Users","Action":"GetAll","User":"leal","ExecutionTimeMs":1}
+2025-05-09 09:40:38.148 +03:00 [INF] Request Info: {"Timestamp":"2025-05-09T06:40:38.1487336Z","Controller":"Users","Action":"GetAll","User":"leal","ExecutionTimeMs":1}
+2025-05-09 09:40:38.279 +03:00 [INF] Request Info: {"Timestamp":"2025-05-09T06:40:38.2792309Z","Controller":"Users","Action":"GetAll","User":"leal","ExecutionTimeMs":1}
+2025-05-09 09:40:38.498 +03:00 [INF] Request Info: {"Timestamp":"2025-05-09T06:40:38.4983370Z","Controller":"Users","Action":"GetAll","User":"leal","ExecutionTimeMs":1}
+2025-05-09 09:40:59.284 +03:00 [INF] Request Info: {"Timestamp":"2025-05-09T06:40:59.2842924Z","Controller":"Users","Action":"GetAll","User":"leal","ExecutionTimeMs":0}
+2025-05-09 09:41:18.737 +03:00 [INF] Request Info: {"Timestamp":"2025-05-09T06:41:18.7371656Z","Controller":"Users","Action":"GetAll","User":"leal","ExecutionTimeMs":0}
+2025-05-09 09:41:19.505 +03:00 [INF] Request Info: {"Timestamp":"2025-05-09T06:41:19.5054927Z","Controller":"Users","Action":"GetAll","User":"leal","ExecutionTimeMs":0}
+2025-05-09 09:41:19.654 +03:00 [INF] Request Info: {"Timestamp":"2025-05-09T06:41:19.6546981Z","Controller":"Users","Action":"GetAll","User":"leal","ExecutionTimeMs":0}
+2025-05-09 09:41:19.792 +03:00 [INF] Request Info: {"Timestamp":"2025-05-09T06:41:19.7927512Z","Controller":"Users","Action":"GetAll","User":"leal","ExecutionTimeMs":0}
+2025-05-09 09:41:19.930 +03:00 [INF] Request Info: {"Timestamp":"2025-05-09T06:41:19.9306620Z","Controller":"Users","Action":"GetAll","User":"leal","ExecutionTimeMs":1}
+2025-05-09 09:41:31.412 +03:00 [INF] Request Info: {"Timestamp":"2025-05-09T06:41:31.4124537Z","Controller":"Users","Action":"GetAll","User":"leal","ExecutionTimeMs":1}
+2025-05-09 09:42:00.302 +03:00 [INF] Request Info: {"Timestamp":"2025-05-09T06:42:00.3026363Z","Controller":"Users","Action":"GetAll","User":"leal","ExecutionTimeMs":1}
+2025-05-09 09:42:03.562 +03:00 [INF] Request Info: {"Timestamp":"2025-05-09T06:42:03.5619911Z","Controller":"Users","Action":"Delete","User":"leal","ExecutionTimeMs":11}
+2025-05-09 09:42:03.567 +03:00 [INF] Request Info: {"Timestamp":"2025-05-09T06:42:03.5679119Z","Controller":"Users","Action":"GetAll","User":"leal","ExecutionTimeMs":0}
+2025-05-09 09:42:08.489 +03:00 [INF] Request Info: {"Timestamp":"2025-05-09T06:42:08.4893558Z","Controller":"Users","Action":"Delete","User":"leal","ExecutionTimeMs":16}
+2025-05-09 09:42:08.500 +03:00 [INF] Request Info: {"Timestamp":"2025-05-09T06:42:08.5001035Z","Controller":"Users","Action":"GetAll","User":"leal","ExecutionTimeMs":4}
+2025-05-09 09:42:19.792 +03:00 [INF] Request Info: {"Timestamp":"2025-05-09T06:42:19.7920853Z","Controller":"Users","Action":"Post","User":"leal","ExecutionTimeMs":7}
+2025-05-09 09:42:19.801 +03:00 [INF] Request Info: {"Timestamp":"2025-05-09T06:42:19.8010080Z","Controller":"Users","Action":"GetAll","User":"leal","ExecutionTimeMs":2}
+2025-05-09 09:43:13.639 +03:00 [INF] Request Info: {"Timestamp":"2025-05-09T06:43:13.6393928Z","Controller":"Users","Action":"Login","User":"Anonymous","ExecutionTimeMs":1}
+2025-05-09 09:43:13.717 +03:00 [INF] Request Info: {"Timestamp":"2025-05-09T06:43:13.7174720Z","Controller":"Shoes","Action":"GetAll","User":"abc","ExecutionTimeMs":2}
+2025-05-09 09:43:26.663 +03:00 [INF] Request Info: {"Timestamp":"2025-05-09T06:43:26.6631982Z","Controller":"Users","Action":"Login","User":"Anonymous","ExecutionTimeMs":0}
+2025-05-09 09:43:26.735 +03:00 [INF] Request Info: {"Timestamp":"2025-05-09T06:43:26.7351403Z","Controller":"Shoes","Action":"GetAll","User":"leal","ExecutionTimeMs":1}
+2025-05-09 09:43:28.002 +03:00 [INF] Request Info: {"Timestamp":"2025-05-09T06:43:28.0026789Z","Controller":"Users","Action":"GetAll","User":"leal","ExecutionTimeMs":1}
+2025-05-09 09:43:37.356 +03:00 [INF] Request Info: {"Timestamp":"2025-05-09T06:43:37.3568218Z","Controller":"Users","Action":"Post","User":"leal","ExecutionTimeMs":6}
+2025-05-09 09:43:37.362 +03:00 [INF] Request Info: {"Timestamp":"2025-05-09T06:43:37.3628267Z","Controller":"Users","Action":"GetAll","User":"leal","ExecutionTimeMs":1}
+2025-05-09 09:43:48.247 +03:00 [INF] Request Info: {"Timestamp":"2025-05-09T06:43:48.2474397Z","Controller":"Users","Action":"Login","User":"Anonymous","ExecutionTimeMs":1}
+2025-05-09 09:43:48.365 +03:00 [INF] Request Info: {"Timestamp":"2025-05-09T06:43:48.3653535Z","Controller":"Shoes","Action":"GetAll","User":"abc","ExecutionTimeMs":2}
+2025-05-09 09:43:57.063 +03:00 [INF] Request Info: {"Timestamp":"2025-05-09T06:43:57.0629996Z","Controller":"Users","Action":"Login","User":"Anonymous","ExecutionTimeMs":0}
+2025-05-09 09:43:57.156 +03:00 [ERR] An unhandled exception has occurred while executing the request.
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at firstProject.Services.UserService.Get(Int32 id) in Z:\B\ליבשיץ לאה\Core\CoreProject-main\Services\UserService.cs:line 39
+   at firstProject.Services.UserTokenService.GetUserFromToken(String token) in Z:\B\ליבשיץ לאה\Core\CoreProject-main\Services\UserTokenService.cs:line 61
+   at firstProject.Controllers.ShoesController.GetAll() in Z:\B\ליבשיץ לאה\Core\CoreProject-main\Controllers\ShoesController.cs:line 28
+   at lambda_method4(Closure, Object, Object[])
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.SyncObjectResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeNextActionFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at CoreProject.Middlewares.RequestLoggingMiddleware.Invoke(HttpContext context) in Z:\B\ליבשיץ לאה\Core\CoreProject-main\Middlewares\RequestLoggingMiddleware.cs:line 18
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2025-05-09 09:44:44.059 +03:00 [ERR] An unhandled exception has occurred while executing the request.
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at firstProject.Services.UserService.Get(Int32 id) in Z:\B\ליבשיץ לאה\Core\CoreProject-main\Services\UserService.cs:line 39
+   at firstProject.Services.UserTokenService.GetUserFromToken(String token) in Z:\B\ליבשיץ לאה\Core\CoreProject-main\Services\UserTokenService.cs:line 61
+   at firstProject.Controllers.ShoesController.GetAll() in Z:\B\ליבשיץ לאה\Core\CoreProject-main\Controllers\ShoesController.cs:line 28
+   at lambda_method4(Closure, Object, Object[])
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.SyncObjectResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeNextActionFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at CoreProject.Middlewares.RequestLoggingMiddleware.Invoke(HttpContext context) in Z:\B\ליבשיץ לאה\Core\CoreProject-main\Middlewares\RequestLoggingMiddleware.cs:line 18
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2025-05-09 09:44:52.615 +03:00 [INF] Request Info: {"Timestamp":"2025-05-09T06:44:52.6150895Z","Controller":"Users","Action":"Login","User":"Anonymous","ExecutionTimeMs":1}
+2025-05-09 09:44:52.697 +03:00 [INF] Request Info: {"Timestamp":"2025-05-09T06:44:52.6973733Z","Controller":"Shoes","Action":"GetAll","User":"leal","ExecutionTimeMs":1}
+2025-05-09 09:44:55.352 +03:00 [INF] Request Info: {"Timestamp":"2025-05-09T06:44:55.3524947Z","Controller":"Users","Action":"GetAll","User":"leal","ExecutionTimeMs":1}
+2025-05-09 09:45:43.384 +03:00 [INF] Request Info: {"Timestamp":"2025-05-09T06:45:43.3841893Z","Controller":"Users","Action":"Login","User":"Anonymous","ExecutionTimeMs":0}
+2025-05-09 09:45:47.590 +03:00 [INF] Request Info: {"Timestamp":"2025-05-09T06:45:47.5907518Z","Controller":"Users","Action":"Login","User":"Anonymous","ExecutionTimeMs":0}
+2025-05-09 09:45:47.710 +03:00 [ERR] An unhandled exception has occurred while executing the request.
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at firstProject.Services.UserService.Get(Int32 id) in Z:\B\ליבשיץ לאה\Core\CoreProject-main\Services\UserService.cs:line 39
+   at firstProject.Services.UserTokenService.GetUserFromToken(String token) in Z:\B\ליבשיץ לאה\Core\CoreProject-main\Services\UserTokenService.cs:line 61
+   at firstProject.Controllers.ShoesController.GetAll() in Z:\B\ליבשיץ לאה\Core\CoreProject-main\Controllers\ShoesController.cs:line 28
+   at lambda_method4(Closure, Object, Object[])
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.SyncObjectResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeNextActionFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at CoreProject.Middlewares.RequestLoggingMiddleware.Invoke(HttpContext context) in Z:\B\ליבשיץ לאה\Core\CoreProject-main\Middlewares\RequestLoggingMiddleware.cs:line 18
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2025-05-09 09:47:09.954 +03:00 [WRN] The ASP.NET Core developer certificate is not trusted. For information about trusting the ASP.NET Core developer certificate, see https://aka.ms/aspnet/https-trust-dev-cert.
+2025-05-09 09:47:12.038 +03:00 [INF] Request Info: {"Timestamp":"2025-05-09T06:47:12.0377973Z","Controller":"Shoes","Action":"GetAll","User":"1234","ExecutionTimeMs":28}
+2025-05-09 09:47:20.522 +03:00 [INF] Request Info: {"Timestamp":"2025-05-09T06:47:20.5223188Z","Controller":"Users","Action":"Login","User":"Anonymous","ExecutionTimeMs":18}
+2025-05-09 09:47:20.557 +03:00 [INF] Request Info: {"Timestamp":"2025-05-09T06:47:20.5575279Z","Controller":"Shoes","Action":"GetAll","User":"leal","ExecutionTimeMs":3}
+2025-05-09 09:47:21.839 +03:00 [INF] Request Info: {"Timestamp":"2025-05-09T06:47:21.8392319Z","Controller":"Users","Action":"GetAll","User":"leal","ExecutionTimeMs":4}
+2025-05-09 09:47:30.891 +03:00 [INF] Request Info: {"Timestamp":"2025-05-09T06:47:30.8915160Z","Controller":"Users","Action":"Post","User":"leal","ExecutionTimeMs":18}
+2025-05-09 09:47:30.897 +03:00 [INF] Request Info: {"Timestamp":"2025-05-09T06:47:30.8973851Z","Controller":"Users","Action":"GetAll","User":"leal","ExecutionTimeMs":1}
+2025-05-09 09:47:38.071 +03:00 [INF] Request Info: {"Timestamp":"2025-05-09T06:47:38.0717111Z","Controller":"Users","Action":"Login","User":"Anonymous","ExecutionTimeMs":1}
+2025-05-09 09:47:38.134 +03:00 [ERR] An unhandled exception has occurred while executing the request.
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at firstProject.Services.UserService.Get(Int32 id) in Z:\B\ליבשיץ לאה\Core\CoreProject-main\Services\UserService.cs:line 43
+   at firstProject.Services.UserTokenService.GetUserFromToken(String token) in Z:\B\ליבשיץ לאה\Core\CoreProject-main\Services\UserTokenService.cs:line 61
+   at firstProject.Controllers.ShoesController.GetAll() in Z:\B\ליבשיץ לאה\Core\CoreProject-main\Controllers\ShoesController.cs:line 28
+   at lambda_method2(Closure, Object, Object[])
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.SyncObjectResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeNextActionFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at CoreProject.Middlewares.RequestLoggingMiddleware.Invoke(HttpContext context) in Z:\B\ליבשיץ לאה\Core\CoreProject-main\Middlewares\RequestLoggingMiddleware.cs:line 18
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2025-05-09 09:55:02.625 +03:00 [WRN] The ASP.NET Core developer certificate is not trusted. For information about trusting the ASP.NET Core developer certificate, see https://aka.ms/aspnet/https-trust-dev-cert.
+2025-05-09 09:55:07.483 +03:00 [INF] Request Info: {"Timestamp":"2025-05-09T06:55:07.4829105Z","Controller":"Shoes","Action":"GetAll","User":"bati","ExecutionTimeMs":26}
+2025-05-09 09:55:17.706 +03:00 [INF] Request Info: {"Timestamp":"2025-05-09T06:55:17.7064597Z","Controller":"Users","Action":"Login","User":"Anonymous","ExecutionTimeMs":17}
+2025-05-09 09:55:17.744 +03:00 [INF] Request Info: {"Timestamp":"2025-05-09T06:55:17.7442275Z","Controller":"Shoes","Action":"GetAll","User":"leal","ExecutionTimeMs":3}
+2025-05-09 09:55:18.831 +03:00 [INF] Request Info: {"Timestamp":"2025-05-09T06:55:18.8310853Z","Controller":"Users","Action":"GetAll","User":"leal","ExecutionTimeMs":6}
+2025-05-09 09:55:37.222 +03:00 [INF] Request Info: {"Timestamp":"2025-05-09T06:55:37.2224196Z","Controller":"Users","Action":"Post","User":"leal","ExecutionTimeMs":40}
+2025-05-09 09:55:37.236 +03:00 [INF] Request Info: {"Timestamp":"2025-05-09T06:55:37.2367478Z","Controller":"Users","Action":"GetAll","User":"leal","ExecutionTimeMs":4}
+2025-05-09 09:56:00.667 +03:00 [INF] Request Info: {"Timestamp":"2025-05-09T06:56:00.6677081Z","Controller":"Users","Action":"Login","User":"Anonymous","ExecutionTimeMs":1}
+2025-05-09 09:56:00.744 +03:00 [ERR] An unhandled exception has occurred while executing the request.
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at firstProject.Services.UserService.Get(Int32 id) in Z:\B\ליבשיץ לאה\Core\CoreProject-main\Services\UserService.cs:line 43
+   at firstProject.Services.UserTokenService.GetUserFromToken(String token) in Z:\B\ליבשיץ לאה\Core\CoreProject-main\Services\UserTokenService.cs:line 61
+   at firstProject.Controllers.ShoesController.GetAll() in Z:\B\ליבשיץ לאה\Core\CoreProject-main\Controllers\ShoesController.cs:line 28
+   at lambda_method2(Closure, Object, Object[])
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.SyncObjectResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeNextActionFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at CoreProject.Middlewares.RequestLoggingMiddleware.Invoke(HttpContext context) in Z:\B\ליבשיץ לאה\Core\CoreProject-main\Middlewares\RequestLoggingMiddleware.cs:line 18
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2025-05-09 10:00:00.413 +03:00 [WRN] The ASP.NET Core developer certificate is not trusted. For information about trusting the ASP.NET Core developer certificate, see https://aka.ms/aspnet/https-trust-dev-cert.
+2025-05-09 10:00:03.949 +03:00 [INF] Request Info: {"Timestamp":"2025-05-09T07:00:03.9491558Z","Controller":"Shoes","Action":"GetAll","User":"zxc","ExecutionTimeMs":25}
+2025-05-09 10:00:13.603 +03:00 [INF] Request Info: {"Timestamp":"2025-05-09T07:00:13.6036231Z","Controller":"Users","Action":"Login","User":"Anonymous","ExecutionTimeMs":20}
+2025-05-09 10:00:13.646 +03:00 [INF] Request Info: {"Timestamp":"2025-05-09T07:00:13.6469197Z","Controller":"Shoes","Action":"GetAll","User":"leal","ExecutionTimeMs":3}
+2025-05-09 10:00:15.024 +03:00 [INF] Request Info: {"Timestamp":"2025-05-09T07:00:15.0249502Z","Controller":"Users","Action":"GetAll","User":"leal","ExecutionTimeMs":5}
+2025-05-09 10:00:17.393 +03:00 [INF] Request Info: {"Timestamp":"2025-05-09T07:00:17.3937529Z","Controller":"Users","Action":"Delete","User":"leal","ExecutionTimeMs":17}
+2025-05-09 10:00:17.399 +03:00 [INF] Request Info: {"Timestamp":"2025-05-09T07:00:17.3996776Z","Controller":"Users","Action":"GetAll","User":"leal","ExecutionTimeMs":1}
+2025-05-09 10:00:18.450 +03:00 [INF] Request Info: {"Timestamp":"2025-05-09T07:00:18.4502565Z","Controller":"Users","Action":"Delete","User":"leal","ExecutionTimeMs":17}
+2025-05-09 10:00:18.460 +03:00 [INF] Request Info: {"Timestamp":"2025-05-09T07:00:18.4600803Z","Controller":"Users","Action":"GetAll","User":"leal","ExecutionTimeMs":1}
+2025-05-09 10:00:19.165 +03:00 [INF] Request Info: {"Timestamp":"2025-05-09T07:00:19.1657046Z","Controller":"Users","Action":"Delete","User":"leal","ExecutionTimeMs":12}
+2025-05-09 10:00:19.172 +03:00 [INF] Request Info: {"Timestamp":"2025-05-09T07:00:19.1720676Z","Controller":"Users","Action":"GetAll","User":"leal","ExecutionTimeMs":1}
+2025-05-09 10:00:27.881 +03:00 [INF] Request Info: {"Timestamp":"2025-05-09T07:00:27.8814906Z","Controller":"Users","Action":"Post","User":"leal","ExecutionTimeMs":15}
+2025-05-09 10:00:27.889 +03:00 [INF] Request Info: {"Timestamp":"2025-05-09T07:00:27.8890783Z","Controller":"Users","Action":"GetAll","User":"leal","ExecutionTimeMs":3}
+2025-05-09 10:00:37.454 +03:00 [INF] Request Info: {"Timestamp":"2025-05-09T07:00:37.4543710Z","Controller":"Users","Action":"Login","User":"Anonymous","ExecutionTimeMs":1}
+2025-05-09 10:00:37.495 +03:00 [INF] Request Info: {"Timestamp":"2025-05-09T07:00:37.4955213Z","Controller":"Shoes","Action":"GetAll","User":"abc","ExecutionTimeMs":2}
+2025-05-09 10:53:39.677 +03:00 [INF] Request Info: {"Timestamp":"2025-05-09T07:53:39.6738515Z","Controller":"Users","Action":"Login","User":"Anonymous","ExecutionTimeMs":134}
+2025-05-09 10:53:40.365 +03:00 [INF] Request Info: {"Timestamp":"2025-05-09T07:53:40.3650810Z","Controller":"Shoes","Action":"GetAll","User":"leal","ExecutionTimeMs":236}
+2025-05-09 10:53:45.746 +03:00 [INF] Request Info: {"Timestamp":"2025-05-09T07:53:45.7460775Z","Controller":"Users","Action":"GetAll","User":"leal","ExecutionTimeMs":23}
+2025-05-09 10:53:49.473 +03:00 [INF] Request Info: {"Timestamp":"2025-05-09T07:53:49.4736781Z","Controller":"Users","Action":"Delete","User":"leal","ExecutionTimeMs":14}
+2025-05-09 10:53:49.505 +03:00 [INF] Request Info: {"Timestamp":"2025-05-09T07:53:49.5052877Z","Controller":"Users","Action":"GetAll","User":"leal","ExecutionTimeMs":15}
+2025-05-09 10:54:11.953 +03:00 [INF] Request Info: {"Timestamp":"2025-05-09T07:54:11.9530544Z","Controller":"Users","Action":"Post","User":"leal","ExecutionTimeMs":54}
+2025-05-09 10:54:11.982 +03:00 [INF] Request Info: {"Timestamp":"2025-05-09T07:54:11.9828758Z","Controller":"Users","Action":"GetAll","User":"leal","ExecutionTimeMs":4}
+2025-05-09 10:54:25.589 +03:00 [INF] Request Info: {"Timestamp":"2025-05-09T07:54:25.5892771Z","Controller":"Users","Action":"Login","User":"Anonymous","ExecutionTimeMs":2}
+2025-05-09 10:54:25.805 +03:00 [INF] Request Info: {"Timestamp":"2025-05-09T07:54:25.8053089Z","Controller":"Shoes","Action":"GetAll","User":"abc","ExecutionTimeMs":13}
