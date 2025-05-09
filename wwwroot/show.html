@@ -10,6 +10,7 @@
 <body>
     <h1>Shoes CRUD</h1>
     <a href="./users.html" id="users-page-link" style="display: none;">Users page</a><br>
+    <button onclick="window.location.href='users.html'">Edit my details</button>
     <button onclick="logout()">Log Out</button>
     <form action="javascript:void(0);" method="POST" onsubmit="addItem()">
         <!-- <input type="text" id="add-code" placeholder="New Shoes Code"> -->
@@ -38,7 +39,7 @@
             <th>Size</th>
             <th>Company</th>
             <th>Color</th>
-            <th></th>
+            <th ></th>
             <th></th>
         </tr>
         <tbody id="shoeses"></tbody>

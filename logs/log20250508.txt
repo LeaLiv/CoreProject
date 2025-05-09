@@ -1,0 +1,2 @@
+2025-05-08 23:59:07.028 +03:00 [INF] Request Info: {"Timestamp":"2025-05-08T20:59:07.0270358Z","Controller":"Shoes","Action":"GetAll","User":"janesmith","ExecutionTimeMs":79}
+2025-05-08 23:59:13.924 +03:00 [INF] Request Info: {"Timestamp":"2025-05-08T20:59:13.9249071Z","Controller":"Users","Action":"GetAll","User":"janesmith","ExecutionTimeMs":18}

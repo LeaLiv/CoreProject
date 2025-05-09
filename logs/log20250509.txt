@@ -1,0 +1,134 @@
+2025-05-09 00:08:43.391 +03:00 [INF] Request Info: {"Timestamp":"2025-05-08T21:08:43.3912935Z","Controller":"Users","Action":"Login","User":"Anonymous","ExecutionTimeMs":78}
+2025-05-09 00:08:43.560 +03:00 [INF] Request Info: {"Timestamp":"2025-05-08T21:08:43.5606129Z","Controller":"Shoes","Action":"GetAll","User":"janesmith","ExecutionTimeMs":47}
+2025-05-09 00:13:16.045 +03:00 [INF] Request Info: {"Timestamp":"2025-05-08T21:13:16.0457950Z","Controller":"Users","Action":"GetAll","User":"janesmith","ExecutionTimeMs":3}
+2025-05-09 00:13:33.756 +03:00 [INF] Request Info: {"Timestamp":"2025-05-08T21:13:33.7568373Z","Controller":"Users","Action":"Update","User":"janesmith","ExecutionTimeMs":27}
+2025-05-09 00:13:33.770 +03:00 [INF] Request Info: {"Timestamp":"2025-05-08T21:13:33.7709056Z","Controller":"Users","Action":"GetAll","User":"janesmith","ExecutionTimeMs":3}
+2025-05-09 00:13:59.186 +03:00 [INF] Request Info: {"Timestamp":"2025-05-08T21:13:59.1863405Z","Controller":"Shoes","Action":"GetAll","User":"janesmith","ExecutionTimeMs":12}
+2025-05-09 00:16:54.934 +03:00 [INF] Request Info: {"Timestamp":"2025-05-08T21:16:54.9346402Z","Controller":"Shoes","Action":"GetAll","User":"janesmith","ExecutionTimeMs":2}
+2025-05-09 00:16:56.028 +03:00 [INF] Request Info: {"Timestamp":"2025-05-08T21:16:56.0284994Z","Controller":"Users","Action":"GetAll","User":"janesmith","ExecutionTimeMs":15}
+2025-05-09 00:16:58.962 +03:00 [INF] Request Info: {"Timestamp":"2025-05-08T21:16:58.9620153Z","Controller":"Shoes","Action":"GetAll","User":"janesmith","ExecutionTimeMs":7}
+2025-05-09 00:17:00.258 +03:00 [INF] Request Info: {"Timestamp":"2025-05-08T21:17:00.2584379Z","Controller":"Users","Action":"GetAll","User":"janesmith","ExecutionTimeMs":28}
+2025-05-09 00:17:01.656 +03:00 [INF] Request Info: {"Timestamp":"2025-05-08T21:17:01.6569140Z","Controller":"Shoes","Action":"GetAll","User":"janesmith","ExecutionTimeMs":37}
+2025-05-09 00:17:03.426 +03:00 [INF] Request Info: {"Timestamp":"2025-05-08T21:17:03.4260445Z","Controller":"Users","Action":"GetAll","User":"janesmith","ExecutionTimeMs":1}
+2025-05-09 00:18:46.701 +03:00 [INF] Request Info: {"Timestamp":"2025-05-08T21:18:46.7013309Z","Controller":"Users","Action":"GetAll","User":"janesmith","ExecutionTimeMs":5}
+2025-05-09 00:18:48.297 +03:00 [INF] Request Info: {"Timestamp":"2025-05-08T21:18:48.2974284Z","Controller":"Users","Action":"GetAll","User":"janesmith","ExecutionTimeMs":4}
+2025-05-09 00:18:49.099 +03:00 [INF] Request Info: {"Timestamp":"2025-05-08T21:18:49.0989934Z","Controller":"Users","Action":"GetAll","User":"janesmith","ExecutionTimeMs":3}
+2025-05-09 00:18:49.285 +03:00 [INF] Request Info: {"Timestamp":"2025-05-08T21:18:49.2852677Z","Controller":"Users","Action":"GetAll","User":"janesmith","ExecutionTimeMs":11}
+2025-05-09 00:19:43.149 +03:00 [INF] Request Info: {"Timestamp":"2025-05-08T21:19:43.1490769Z","Controller":"Users","Action":"GetAll","User":"janesmith","ExecutionTimeMs":12}
+2025-05-09 00:19:43.360 +03:00 [INF] Request Info: {"Timestamp":"2025-05-08T21:19:43.3603947Z","Controller":"Users","Action":"GetAll","User":"janesmith","ExecutionTimeMs":10}
+2025-05-09 00:20:21.849 +03:00 [INF] Request Info: {"Timestamp":"2025-05-08T21:20:21.8491821Z","Controller":"Users","Action":"Login","User":"Anonymous","ExecutionTimeMs":60}
+2025-05-09 00:24:50.545 +03:00 [INF] Request Info: {"Timestamp":"2025-05-08T21:24:50.5428765Z","Controller":"Users","Action":"Login","User":"Anonymous","ExecutionTimeMs":93}
+2025-05-09 00:24:55.887 +03:00 [INF] Request Info: {"Timestamp":"2025-05-08T21:24:55.8876536Z","Controller":"Users","Action":"Login","User":"Anonymous","ExecutionTimeMs":2}
+2025-05-09 00:25:22.049 +03:00 [INF] Request Info: {"Timestamp":"2025-05-08T21:25:22.0487621Z","Controller":"Users","Action":"Login","User":"Anonymous","ExecutionTimeMs":69}
+2025-05-09 00:25:31.648 +03:00 [INF] Request Info: {"Timestamp":"2025-05-08T21:25:31.6489346Z","Controller":"Users","Action":"Login","User":"Anonymous","ExecutionTimeMs":3}
+2025-05-09 00:25:55.485 +03:00 [INF] Request Info: {"Timestamp":"2025-05-08T21:25:55.4850225Z","Controller":"Users","Action":"Login","User":"Anonymous","ExecutionTimeMs":0}
+2025-05-09 00:26:05.036 +03:00 [INF] Request Info: {"Timestamp":"2025-05-08T21:26:05.0368554Z","Controller":"Users","Action":"Login","User":"Anonymous","ExecutionTimeMs":1}
+2025-05-09 00:26:50.164 +03:00 [INF] Request Info: {"Timestamp":"2025-05-08T21:26:50.1640905Z","Controller":"Users","Action":"Login","User":"Anonymous","ExecutionTimeMs":53}
+2025-05-09 00:26:50.650 +03:00 [INF] Request Info: {"Timestamp":"2025-05-08T21:26:50.6502484Z","Controller":"Shoes","Action":"GetAll","User":"johndoe","ExecutionTimeMs":74}
+2025-05-09 00:26:51.948 +03:00 [INF] Request Info: {"Timestamp":"2025-05-08T21:26:51.9482855Z","Controller":"Users","Action":"GetAll","User":"johndoe","ExecutionTimeMs":25}
+2025-05-09 00:27:29.000 +03:00 [INF] Request Info: {"Timestamp":"2025-05-08T21:27:29.0008953Z","Controller":"Users","Action":"Post","User":"johndoe","ExecutionTimeMs":90}
+2025-05-09 00:27:29.014 +03:00 [INF] Request Info: {"Timestamp":"2025-05-08T21:27:29.0147529Z","Controller":"Users","Action":"GetAll","User":"johndoe","ExecutionTimeMs":1}
+2025-05-09 00:27:47.715 +03:00 [INF] Request Info: {"Timestamp":"2025-05-08T21:27:47.7152137Z","Controller":"Users","Action":"Login","User":"Anonymous","ExecutionTimeMs":1}
+2025-05-09 00:27:48.294 +03:00 [ERR] An unhandled exception has occurred while executing the request.
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at firstProject.Controllers.ShoesController.GetAll() in C:\Lea\Core\CoreProject\Controllers\ShoesController.cs:line 30
+   at lambda_method4(Closure, Object, Object[])
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.SyncObjectResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeNextActionFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at CoreProject.Middlewares.RequestLoggingMiddleware.Invoke(HttpContext context) in C:\Lea\Core\CoreProject\Middlewares\RequestLoggingMiddleware.cs:line 18
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2025-05-09 00:40:25.797 +03:00 [INF] Request Info: {"Timestamp":"2025-05-08T21:40:25.7979422Z","Controller":"Shoes","Action":"Post","User":"Anonymous","ExecutionTimeMs":19}
+2025-05-09 00:40:25.814 +03:00 [ERR] An unhandled exception has occurred while executing the request.
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at firstProject.Controllers.ShoesController.GetAll() in C:\Lea\Core\CoreProject\Controllers\ShoesController.cs:line 30
+   at lambda_method4(Closure, Object, Object[])
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.SyncObjectResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeNextActionFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at CoreProject.Middlewares.RequestLoggingMiddleware.Invoke(HttpContext context) in C:\Lea\Core\CoreProject\Middlewares\RequestLoggingMiddleware.cs:line 18
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2025-05-09 00:41:29.627 +03:00 [INF] Request Info: {"Timestamp":"2025-05-08T21:41:29.6271179Z","Controller":"Shoes","Action":"Post","User":"Anonymous","ExecutionTimeMs":1}
+2025-05-09 00:41:29.642 +03:00 [ERR] An unhandled exception has occurred while executing the request.
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at firstProject.Controllers.ShoesController.GetAll() in C:\Lea\Core\CoreProject\Controllers\ShoesController.cs:line 30
+   at lambda_method4(Closure, Object, Object[])
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.SyncObjectResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeNextActionFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at CoreProject.Middlewares.RequestLoggingMiddleware.Invoke(HttpContext context) in C:\Lea\Core\CoreProject\Middlewares\RequestLoggingMiddleware.cs:line 18
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2025-05-09 00:44:27.654 +03:00 [INF] Request Info: {"Timestamp":"2025-05-08T21:44:27.6528708Z","Controller":"Users","Action":"Login","User":"Anonymous","ExecutionTimeMs":126}
+2025-05-09 00:44:31.048 +03:00 [INF] Request Info: {"Timestamp":"2025-05-08T21:44:31.0487492Z","Controller":"Users","Action":"Login","User":"Anonymous","ExecutionTimeMs":6}
+2025-05-09 00:44:37.739 +03:00 [INF] Request Info: {"Timestamp":"2025-05-08T21:44:37.7395644Z","Controller":"Users","Action":"Login","User":"Anonymous","ExecutionTimeMs":1}
+2025-05-09 00:44:42.370 +03:00 [INF] Request Info: {"Timestamp":"2025-05-08T21:44:42.3705124Z","Controller":"Users","Action":"Login","User":"Anonymous","ExecutionTimeMs":46}
+2025-05-09 00:44:42.975 +03:00 [INF] Request Info: {"Timestamp":"2025-05-08T21:44:42.9755547Z","Controller":"Shoes","Action":"GetAll","User":"leal","ExecutionTimeMs":117}
+2025-05-09 00:45:54.256 +03:00 [INF] Request Info: {"Timestamp":"2025-05-08T21:45:54.2566405Z","Controller":"Shoes","Action":"GetAll","User":"leal","ExecutionTimeMs":3}
+2025-05-09 00:46:10.701 +03:00 [INF] Request Info: {"Timestamp":"2025-05-08T21:46:10.7017267Z","Controller":"Users","Action":"Login","User":"Anonymous","ExecutionTimeMs":0}
+2025-05-09 00:46:15.518 +03:00 [INF] Request Info: {"Timestamp":"2025-05-08T21:46:15.5185875Z","Controller":"Users","Action":"Login","User":"Anonymous","ExecutionTimeMs":0}
+2025-05-09 00:46:15.750 +03:00 [INF] Request Info: {"Timestamp":"2025-05-08T21:46:15.7505288Z","Controller":"Shoes","Action":"GetAll","User":"leal","ExecutionTimeMs":8}
+2025-05-09 00:46:18.972 +03:00 [INF] Request Info: {"Timestamp":"2025-05-08T21:46:18.9723369Z","Controller":"Users","Action":"GetAll","User":"leal","ExecutionTimeMs":58}
+2025-05-09 00:46:42.172 +03:00 [INF] Request Info: {"Timestamp":"2025-05-08T21:46:42.1725096Z","Controller":"Users","Action":"Post","User":"leal","ExecutionTimeMs":163}
+2025-05-09 00:46:42.201 +03:00 [INF] Request Info: {"Timestamp":"2025-05-08T21:46:42.2017321Z","Controller":"Users","Action":"GetAll","User":"leal","ExecutionTimeMs":2}
+2025-05-09 00:47:23.036 +03:00 [INF] Request Info: {"Timestamp":"2025-05-08T21:47:23.0367483Z","Controller":"Users","Action":"Login","User":"Anonymous","ExecutionTimeMs":0}
+2025-05-09 00:47:23.392 +03:00 [ERR] An unhandled exception has occurred while executing the request.
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at firstProject.Controllers.ShoesController.GetAll() in C:\Lea\Core\CoreProject\Controllers\ShoesController.cs:line 31
+   at lambda_method4(Closure, Object, Object[])
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.SyncObjectResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeNextActionFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at CoreProject.Middlewares.RequestLoggingMiddleware.Invoke(HttpContext context) in C:\Lea\Core\CoreProject\Middlewares\RequestLoggingMiddleware.cs:line 18
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
