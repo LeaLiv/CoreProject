@@ -10,11 +10,12 @@
 
 <body>
     <h1>Users CRUD</h1>
-    <a href="./show.html">Shoes page</a><br>
+     <button onclick="window.location.href='show.html'">Shoes page</button>
 
     <button onclick="logout()">Log Out</button>
 
     <form action="javascript:void(0);" method="POST" onsubmit="addUser()" id="add-user-form">
+       
         <input type="text" id="add-name" placeholder="User Name" required>
         <input type="email" id="add-email" placeholder="User Email" required>
         <input type="text" id="add-userName" placeholder="userName" required>

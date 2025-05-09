@@ -1,17 +1,15 @@
 const uri = '/shoes';
 let shoeses = [];
 let token = '';// = localStorage.getItem("token");
+let payload=''
 function getItems() {
-
-    token = localStorage.getItem("token");
     if (token) {
-        const payload = JSON.parse(atob(token.split('.')[1]));
         const userId = payload["id"];
-        const role=payload["type"]
-        if(role=="admin")
-        {
-            const usersPageLink=document.getElementById('users-page-link');
-            usersPageLink.style.display = 'block';
+        const role = payload["type"]
+        if (role == "admin") {
+            const usersPageLink = document.getElementById('users-page-link');
+            usersPageLink.style.display = 'inline';
+            fillSelectUser();
         }
     }
     else {
@@ -32,7 +30,39 @@ function getItems() {
 }
 
 
+const fillSelectUser = () => {
+    const selectElement = document.getElementById('userSelect');
+    selectElement.classList.remove('hidden-from-user');
+    fetch('/users',{
+        method: 'GET',
+        headers: {
+            'Accept': 'application/json',
+            "Authorization": `Bearer ${token}`
+        }
+    })
+    .then(response => response.json())
+    .then(data => { 
+        let userName='';
+        const userId=payload["id"];
+        data.forEach(user => {
+            const option = document.createElement('option');
+            option.value = user.id;  
+            option.textContent = user.userName;
+            if(user.id==userId)
+            {
+                selectElement.value=userId
+                userName=user.userName;
+                selectElement.ariaSelected=userName
+            }              
+            else{             
+            selectElement.appendChild(option);
+        }
+            
+        });       
+    })
+    .catch(error => console.error('Unable to get users.', error));
 
+}
 
 const addItem = () => {
     console.log("in addItem");
@@ -42,7 +72,14 @@ const addItem = () => {
     const addColor = document.getElementById('add-color');
 
     const payload = JSON.parse(atob(token.split('.')[1]));
-    const userId = payload["id"];
+    let userId = payload["id"];
+    const role=payload["type"]
+    if(role=='admin'){
+        const selectuser=document.getElementById('userSelect');
+        userId=selectuser.value;
+        console.log(userId);
+        
+    }
     const item = {
         code: shoeses.length + 1,
         size: addSize.value,
@@ -95,26 +132,27 @@ function displayEditForm(code) {
 
 async function updateItem() {
     const itemCode = document.getElementById('edit-Code').value;
-    let userId=0;
+    let userId = 0;
     await fetch(`${uri}/${itemCode}`, {
         method: 'GET',
         headers: {
             'Accept': 'application/json',
             "Authorization": `Bearer ${token}`
         }
-    }).then(response=> response.json())
-    .then(data=>{userId=data.userId
-    console.log(data)
-    console.log(userId)
-    })
-    .catch(error => console.error('Unable to get item.', error))
+    }).then(response => response.json())
+        .then(data => {
+            userId = data.userId
+            console.log(data)
+            console.log(userId)
+        })
+        .catch(error => console.error('Unable to get item.', error))
     console.log(userId)
     const item = {
         code: parseInt(itemCode, 10),
         size: document.getElementById('edit-Size').value,
         company: document.getElementById('edit-Company').value.trim(),
         color: document.getElementById('edit-Color').value,
-        userId:userId   
+        userId: userId
     };
 
     fetch(`${uri}/${itemCode}`, {
@@ -185,8 +223,19 @@ function _displayItems(data) {
 
     shoeses = data;
 }
-const logout=()=>{
+const logout = () => {
     localStorage.removeItem("token");
-    window.location.href="index.html";
+    window.location.href = "index.html";
 
 }
+document.addEventListener("DOMContentLoaded", function () {
+    token = localStorage.getItem("token");
+    if (!token) {
+        alert("You must log in first");
+        window.location.href = "index.html";
+        return;
+    }
+    payload = JSON.parse(atob(token.split('.')[1]));
+    getItems();
+
+});

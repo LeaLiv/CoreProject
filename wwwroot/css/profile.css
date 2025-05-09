@@ -1,0 +1,53 @@
+#userDetails {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    /* max-width: 90%; */
+    margin: auto;
+    margin-bottom: 20px;
+}
+label{
+    font-weight: bolder;
+}
+#editForm {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+margin: auto;
+
+}
+
+#editForm label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+#editForm input, #editForm select {
+    width: 94.5%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+#editForm input[type="password"] {
+    margin-bottom: 20px;
+}
+@media (max-width: 600px) {
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    button {
+        width: 100%;
+    }
+
+    #userDetails, #editForm {
+        width: 100%;
+        padding: 15px;
+    }
+}

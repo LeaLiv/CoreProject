@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="he">
+<head>
+    <meta charset="UTF-8">
+    <title>My Profile</title>
+    <link rel="stylesheet" href="./css/site.css">
+    <link rel="stylesheet" href="./css/profile.css">
+    <link rel="icon" type="image/x-icon" href="./icons/favicon.ico">
+</head>
+<body>
+    <h1>My Profile</h1>
+     <button onclick="window.location.href='show.html'">Shoes page</button>
+    <button onclick="logout()">Log Out</button>
+
+    <div id="userDetails">
+        <label for="userName" >User Name:</label>
+        <h3 id="userName"></h3>
+        <label for="name" >Name:</label>
+        <h3 id="name"></h3>
+        <label for="email">Email: </label>
+        <h3 id="email"></h3>
+        <label for="role">Role: </h3></label>
+        <h3 id="role"></h3>
+        <h3 id="h3assword"></p>
+        <button onclick="displayEditForm()">Edit</button>
+    </div>
+
+<div id="editForm">
+        <h3>Edit User</h3>
+        <form action="javascript:void(0);" onsubmit="updateUser()">
+            <input type="hidden" id="edit-Id">
+            <input type="text" id="edit-Name">
+            <input type="email" id="edit-Email">
+            <input type="text" id="edit-userName">
+            <select id="edit-Role">
+                <option value="user">user</option>
+                <option value="admin">admin</option>
+            </select>
+            <input type="hidden" id="edit-Password">
+            <input type="submit" value="Save">
+            <a onclick="closeInput()" aria-label="Close">&#10006;</a>
+        </form>
+    </div>
+
+    <script src="./js/profile.js"></script>
+    <script type="text/javascript">
+    </script>
+</body>
+</html>

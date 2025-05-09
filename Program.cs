@@ -45,7 +45,7 @@ builder.Services.AddAuthorization(cfg =>
     cfg.AddPolicy("admin", policy => policy.RequireClaim("type", "admin"));
     cfg.AddPolicy("user", policy => policy.RequireClaim("type", "user","admin"));
 });
-builder.Services.AddScoped<ActiveUser>();
+
 
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen(c =>

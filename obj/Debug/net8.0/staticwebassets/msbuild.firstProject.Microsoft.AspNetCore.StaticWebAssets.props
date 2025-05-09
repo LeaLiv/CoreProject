@@ -138,8 +138,8 @@
       <RelatedAsset></RelatedAsset>
       <AssetTraitName></AssetTraitName>
       <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>z435h4xi0u</Fingerprint>
-      <Integrity>3Y9EFkF9A1W/enlHYoFKx5t7rsMWtgEwq4xI1s/qdlA=</Integrity>
+      <Fingerprint>uyhhnoi7r2</Fingerprint>
+      <Integrity>ytOAfV2xt7njo2fecy3sre3g7a4oyHfwiX6NvKp1D0E=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\show.html'))</OriginalItemSpec>
@@ -156,8 +156,8 @@
       <RelatedAsset></RelatedAsset>
       <AssetTraitName></AssetTraitName>
       <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>0edyi83oxo</Fingerprint>
-      <Integrity>uOXwsWfpEl+lgIG75VFWOJzlLmiHbLdnXiYX3W3l6KM=</Integrity>
+      <Fingerprint>l63w5wb275</Fingerprint>
+      <Integrity>Ha140dh5hghVZanZaIp9Ste49Hlb8gZqjU3l4OdpTAI=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\users.html'))</OriginalItemSpec>

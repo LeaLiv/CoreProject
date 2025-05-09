@@ -56,8 +56,6 @@ new TokenValidationParameters
                 Console.WriteLine("Token does not contain user id");
                 return null;
             }
-            System.Console.WriteLine("in GetUserFromToken");
-            // System.Console.WriteLine(int.Parse(id));
             return userService.Get(int.Parse(id));
         }
 

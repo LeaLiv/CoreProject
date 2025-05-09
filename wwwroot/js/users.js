@@ -77,6 +77,12 @@ function displayEditForm(id) {
     document.getElementById('edit-Password').value = user.password;
 
     document.getElementById('editForm').style.display = 'block';
+        const role=payload["type"];
+    if(role=="user")
+    { 
+        const editRole =document.getElementById('edit-Role');
+        editRole.disabled = true;
+    }
 }
 
 function updateUser() {

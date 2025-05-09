@@ -6,7 +6,7 @@ namespace firstProject.Services;
 
 public class UserService : IUserService
 {
-    List<User> users { get; set;}
+    List<User> users { get; set; }
 
     private static string fileName = "users.json";
     private string filePath;
@@ -16,8 +16,9 @@ public class UserService : IUserService
         loadUsers();
 
     }
-private void loadUsers(){
-    using (var jsonFile = File.OpenText(filePath))
+    private void loadUsers()
+    {
+        using (var jsonFile = File.OpenText(filePath))
         {
             users = JsonSerializer.Deserialize<List<User>>(jsonFile.ReadToEnd()
             , new JsonSerializerOptions
@@ -25,7 +26,7 @@ private void loadUsers(){
                 PropertyNameCaseInsensitive = true
             });
         }
-}
+    }
 
     private async void saveToFile()
     {
@@ -37,14 +38,7 @@ private void loadUsers(){
     public User Get(int id)
     {
         loadUsers();
-        User user = users.FirstOrDefault<User>(s => s.Id == id);
-        // System.Console.WriteLine(users.for);
-        // foreach (var item in users)
-        // {
-        //     System.Console.WriteLine(item.userName);
-        // }
-        Console.WriteLine(user.userName);
-        return user;
+        return users.FirstOrDefault<User>(s => s.Id == id);
     }
 
 
@@ -55,12 +49,8 @@ private void loadUsers(){
         int maxId = users.Max(s => s.Id);
         newUser.Id = maxId + 1;
         users.Add(newUser);
-
         saveToFile();
-        // foreach (var item in users)
-        // {
-        //     System.Console.WriteLine($"{item.Id}: {item.userName}");
-        // }
+
     }
 
     public void Update(User newUser)
